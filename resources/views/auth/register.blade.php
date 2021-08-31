@@ -79,9 +79,10 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
-                                <button type="button"  class="btn btn-danger">
-                                    {{ __('Cancel') }}
-                                </button>
+                                <a class="btn btn-default btn-close btn-danger" href="{{ route('home') }}"> {{ __('Cancel') }}</a>
+
+
+
                             </div>
 
                         </div>
