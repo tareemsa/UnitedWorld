@@ -22,4 +22,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/dashboard/jobs','JobController@create');
+Route::get('/dashboard',function () {
+    return view('admin/index');
+});
+
+
