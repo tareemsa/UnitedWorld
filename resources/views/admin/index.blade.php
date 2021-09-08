@@ -59,7 +59,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                            <img src="dist/img/AdminLTELogo.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     Brad Diesel
@@ -75,7 +75,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <img src="dist/img/AdminLTELogo.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     John Pierce
@@ -91,7 +91,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                            <img src="dist/img/AdminLTELogo.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
                                     Nora Silvester
@@ -970,7 +970,7 @@
                                                     <span class="direct-chat-name float-left">admin name</span>
                                                 </div>
                                                 <!-- /.direct-chat-infos -->
-                                                <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                                                <img class="direct-chat-img" src="dist/img/AdminLTELogo.png" alt="message user image">
                                                 <!-- /.direct-chat-img -->
                                                 <div class="direct-chat-text">
                                                     Is this template really for free? That's unbelievable!
@@ -986,7 +986,7 @@
                                                     <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                                                 </div>
                                                 <!-- /.direct-chat-infos -->
-                                                <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                                                <img class="direct-chat-img" src="dist/img/AdminLTELogo.png" alt="message user image">
                                                 <!-- /.direct-chat-img -->
                                                 <div class="direct-chat-text">
                                                     You better believe it!
@@ -1001,7 +1001,7 @@
                                                     <span class="direct-chat-name float-left">Admin Name</span>
                                                 </div>
                                                 <!-- /.direct-chat-infos -->
-                                                <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                                                <img class="direct-chat-img" src="dist/img/AdminLTELogo.png" alt="message user image">
                                                 <!-- /.direct-chat-img -->
 
                                             </div>
@@ -1014,7 +1014,7 @@
                                                     <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
                                                 </div>
                                                 <!-- /.direct-chat-infos -->
-                                                <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                                                <img class="direct-chat-img" src="dist/img/AdminLTELogo.png" alt="message user image">
                                                 <!-- /.direct-chat-img -->
                                                 <div class="direct-chat-text">
                                                     I would love to.
@@ -1031,7 +1031,7 @@
                                             <ul class="contacts-list">
                                                 <li>
                                                     <a href="#">
-                                                        <img class="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Avatar">
+                                                        <img class="contacts-list-img" src="dist/img/AdminLTELogo.png" alt="User Avatar">
 
                                                         <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1046,7 +1046,7 @@
                                                 <!-- End Contact Item -->
                                                 <li>
                                                     <a href="#">
-                                                        <img class="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Avatar">
+                                                        <img class="contacts-list-img" src="dist/img/AdminLTELogo.png" alt="User Avatar">
 
                                                         <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1061,7 +1061,7 @@
                                                 <!-- End Contact Item -->
                                                 <li>
                                                     <a href="#">
-                                                        <img class="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Avatar">
+                                                        <img class="contacts-list-img" src="dist/img/AdminLTELogo.png" alt="User Avatar">
 
                                                         <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1076,7 +1076,7 @@
                                                 <!-- End Contact Item -->
                                                 <li>
                                                     <a href="#">
-                                                        <img class="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Avatar">
+                                                        <img class="contacts-list-img" src="dist/img/AdminLTELogo.png" alt="User Avatar">
 
                                                         <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1091,7 +1091,7 @@
                                                 <!-- End Contact Item -->
                                                 <li>
                                                     <a href="#">
-                                                        <img class="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Avatar">
+                                                        <img class="contacts-list-img" src="dist/img/AdminLTELogo.png" alt="User Avatar">
 
                                                         <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1106,7 +1106,7 @@
                                                 <!-- End Contact Item -->
                                                 <li>
                                                     <a href="#">
-                                                        <img class="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Avatar">
+                                                        <img class="contacts-list-img" src="dist/img/AdminLTELogo.png" alt="User Avatar">
 
                                                         <div class="contacts-list-info">
                               <span class="contacts-list-name">
@@ -1161,42 +1161,42 @@
                                     <div class="card-body p-0">
                                         <ul class="users-list clearfix">
                                             <li>
-                                                <img src="dist/img/user1-128x128.jpg" alt="User Image">
+                                                <img src="dist/img/AdminLTELogo.png" alt="User Image">
                                                 <a class="users-list-name" href="#">Admin Name</a>
                                                 <span class="users-list-date">Today</span>
                                             </li>
                                             <li>
-                                                <img src="dist/img/user8-128x128.jpg" alt="User Image">
+                                                <img src="dist/img/AdminLTELogo.png" alt="User Image">
                                                 <a class="users-list-name" href="#">Norman</a>
                                                 <span class="users-list-date">Yesterday</span>
                                             </li>
                                             <li>
-                                                <img src="dist/img/user7-128x128.jpg" alt="User Image">
+                                                <img src="dist/img/AdminLTELogo.png" alt="User Image">
                                                 <a class="users-list-name" href="#">Jane</a>
                                                 <span class="users-list-date">12 Jan</span>
                                             </li>
                                             <li>
-                                                <img src="dist/img/user6-128x128.jpg" alt="User Image">
+                                                <img src="dist/img/AdminLTELogo.png" alt="User Image">
                                                 <a class="users-list-name" href="#">John</a>
                                                 <span class="users-list-date">12 Jan</span>
                                             </li>
                                             <li>
-                                                <img src="dist/img/user2-160x160.jpg" alt="User Image">
+                                                <img src="dist/img/AdminLTELogo.png" alt="User Image">
                                                 <a class="users-list-name" href="#">Alexander</a>
                                                 <span class="users-list-date">13 Jan</span>
                                             </li>
                                             <li>
-                                                <img src="dist/img/user5-128x128.jpg" alt="User Image">
+                                                <img src="dist/img/AdminLTELogo.png" alt="User Image">
                                                 <a class="users-list-name" href="#">Sarah</a>
                                                 <span class="users-list-date">14 Jan</span>
                                             </li>
                                             <li>
-                                                <img src="dist/img/user4-128x128.jpg" alt="User Image">
+                                                <img src="dist/img/AdminLTELogo.png" alt="User Image">
                                                 <a class="users-list-name" href="#">Nora</a>
                                                 <span class="users-list-date">15 Jan</span>
                                             </li>
                                             <li>
-                                                <img src="dist/img/user3-128x128.jpg" alt="User Image">
+                                                <img src="dist/img/AdminLTELogo.png" alt="User Image">
                                                 <a class="users-list-name" href="#">Nadia</a>
                                                 <span class="users-list-date">15 Jan</span>
                                             </li>
