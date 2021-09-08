@@ -22,8 +22,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
 Route::get('/dashboard',function () {
     return view('admin/index');
 });
+Route::get('/dashboard/jobs',[App\Http\Controllers\JobController::class, 'create']);
 
-
+Route::group(['middleware' => ['role:user']], function () {});

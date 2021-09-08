@@ -22,7 +22,7 @@ class JobController extends Controller
         $this->error_message = trans('admin.fail_while_create');
         $this->update_error_message = trans('admin.fail_while_update');
         $this->model_instance = Job::class;
-        $this->middleware('auth');
+      //  $this->middleware('auth');
     }
     private function StoreValidationRules()
     {
@@ -61,8 +61,8 @@ class JobController extends Controller
 
     public function create()
     {
-        $jobs=$this->model_instance::paginate(10);
-        return view('admin/jobs',compact('jobs'));
+        $jobs=$this->model_instance::paginate(1);
+        return view('admin/jobs/add',compact('jobs'));
     }
     /**
      * Store a newly created resource in storage.
