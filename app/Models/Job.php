@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Job extends Model
 {
     use HasFactory;
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
+    public function skills(){
+        return $this->belongsToMany('App\Models\Skill');
+    }
 }

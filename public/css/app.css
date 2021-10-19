@@ -10005,3 +10005,6 @@ h3 {
 .hide{
   display: none!important;
 }
+.nav-sidebar .nav-treeview{
+  padding-left: 10%!important;
+}

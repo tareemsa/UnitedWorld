@@ -61,7 +61,7 @@ class JobController extends Controller
 
     public function create()
     {
-        $jobs=$this->model_instance::paginate(1);
+        $jobs=$this->model_instance::paginate(2);
         return view('admin/jobs/add',compact('jobs'));
     }
     /**

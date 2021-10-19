@@ -12,7 +12,9 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
     use HasRoles;
-
+    public function jobs(){
+        return $this->hasMany('App\Models\Job');
+    }
     /**
      * The attributes that are mass assignable.
      *
