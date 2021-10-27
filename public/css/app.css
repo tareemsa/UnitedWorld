@@ -10008,3 +10008,16 @@ h3 {
 .nav-sidebar .nav-treeview{
   padding-left: 10%!important;
 }
+.red{
+  color: red;
+}
+.green{
+  color: lightgreen;
+}
+.yellow{
+  color: #dca331;
+}
+
+.nav-treeview > .nav-item > .nav-link{
+ width: 95%!important;
+}

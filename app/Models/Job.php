@@ -8,6 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Job extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'user_id',
+        'title',
+        'desc',
+        'type',
+        'location',
+        'work_time',
+        'paid_per',
+        'salary',
+    ];
+
     public function user()
     {
         return $this->belongsTo('App\Models\User');

@@ -42,7 +42,7 @@
     <!-- summernote -->
     <link rel="stylesheet" href="/plugins/summernote/summernote-bs4.min.css">
 </head>
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div id="app">
     <div class="wrapper">
 
@@ -53,7 +53,7 @@
 
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-dark">
+        <nav class="main-header navbar navbar-expand navbar-light">
             <!-- Left navbar l
                                     Widgets
                                     inks -->
@@ -229,8 +229,8 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link ">
+                        <li class="nav-item ">
+                            <a href="/dashboard" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -239,13 +239,29 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="/dashboard/jobs" class="nav-link">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fa fa-solid fa-briefcase"></i>
                                 <p>
                                     Jobs
-
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right"></span>
                                 </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/dashboard/jobs/" class="nav-link">
+                                        <i class="fas fa-user nav-icon"></i>
+                                        <p>View All</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/dashboard/jobs/add" class="nav-link">
+                                        <i class="fas fa-building nav-icon"></i>
+                                        <p>Add</p>
+                                    </a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -717,7 +733,8 @@
         $('#nav li a').each(function(){
             var $this = $(this);
             // if the current path is like this link, make it active
-            if($this.attr('href').indexOf(current) !== -1){
+            console.log(current);
+            if($this.attr('href')==current ){
                 $this.addClass('active');
             }
         })
