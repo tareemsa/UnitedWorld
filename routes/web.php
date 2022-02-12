@@ -29,4 +29,8 @@ Route::get('/dashboard',function () {
 Route::get('/dashboard/jobs',[App\Http\Controllers\JobController::class, 'index']);
 Route::get('/dashboard/jobs/add',[App\Http\Controllers\JobController::class, 'create']);
 Route::post('/dashboard/jobs',[App\Http\Controllers\JobController::class, 'store']);
+Route::get('/dashboard/jobs/{id}',[App\Http\Controllers\JobController::class, 'show']);
 Route::group(['middleware' => ['role:user']], function () {});
+Route::get('/dashboardssss',function () {
+    return view('admin/index');
+});

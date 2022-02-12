@@ -41,9 +41,9 @@
                             <th>Paid Per</th>
                             <th>Salary</th>
                             <th>Company</th>
-                            <th >View</th>
-                            <th >Edit</th>
-                            <th >Delete</th>
+                            <th style="width: 20%">
+                            </th>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -57,9 +57,23 @@
                                 <td>{{$job->paid_per}}</td>
                                 <td>{{$job->salary}}</td>
                                 <td>{{$job->user->name}}</td>
-                                <td><a><i class="fa fa-solid fa-eye green"></i></a></td>
-                                <td><a><i class="fa fa-solid fa-pen yellow"></i></a></td>
-                                <td><a><i class="fa fa-solid fa-trash red" ></i></a></td>
+                                <td class="project-actions text-right">
+                                    <a class="btn btn-primary btn-sm" href="/dashboard/jobs/{{$job->id}}">
+                                        <i class="fas fa-eye">
+                                        </i>
+                                        View
+                                    </a>
+                                    <a class="btn btn-info btn-sm" href="#">
+                                        <i class="fas fa-pencil-alt">
+                                        </i>
+                                        Edit
+                                    </a>
+                                    <a class="btn btn-danger btn-sm" href="#">
+                                        <i class="fas fa-trash">
+                                        </i>
+                                        Delete
+                                    </a>
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>

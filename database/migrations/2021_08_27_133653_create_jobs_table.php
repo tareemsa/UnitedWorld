@@ -22,7 +22,11 @@ class CreateJobsTable extends Migration
             $table->string('location');
             $table->string('work_time');
             $table->string('paid_per');
+            $table->string('military_status');
+            $table->string('education_level');
+            $table->string('relationship_status');
             $table->integer('salary');
+            $table->integer('experience');
             $table->timestamps();
         });
     }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Job;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -32,10 +33,14 @@ class JobController extends Controller
             'title' => 'required|string|max:100',
             'type' => 'required|string|max:100',
             'salary' => 'required|integer',
-            'paid_per' => 'required|string|max:100',
+            'paid_per' => 'required|in:hour,day',
             'work_time' => 'required|string|max:100',
             'location' => 'required|string|max:100',
             'desc' => 'required|string|max:10000',
+            'military_status' => 'required|in:done,not_yet',
+            'experience' => 'required|numeric|max:50',
+            'education' => 'required|string|max:100',
+            'relationship_status' => 'required|in:married,engaged,single',
         ];
     }
 
@@ -49,6 +54,10 @@ class JobController extends Controller
             'work_time' => 'required|string|max:100',
             'location' => 'required|string|max:100',
             'desc' => 'required|string|max:10000',
+            'military_status' => 'required|in:done,not_yet',
+            'experience' => 'required|integer|max:50',
+            'education' => 'required|string|max:100',
+            'relationship_status' => 'required|in:married,engaged,single',
         ];
     }
 
@@ -66,8 +75,8 @@ class JobController extends Controller
 
     public function create()
     {
-
-        return view('admin/jobs/add');
+        $categories=Category::all();
+        return view('admin/jobs/add')->with('categories');
     }
 
     /**
@@ -84,21 +93,23 @@ class JobController extends Controller
         if ($validator->fails()) {
             Log::error($validator->errors());
 
-            return redirect('/dashboard/jobs') ->withErrors($validator) ->withInput();
+            return redirect('/dashboard/jobs/add') ->withErrors($validator) ->withInput();
         }
+
         try {
 
             $validated_data = $validator->validated();
             //$validated_data['user_id'] = get_Current_user_id();
             $validated_data['user_id'] = 1;
             $object = $this->model_instance::create($validated_data);
+
             $log_message = 'jobs.create_log' . '#' . $object->id;
             Log::info($log_message);
-            return redirect('/dashboard/jobs')->with('Success', 'Job Added Successfully');
+           return redirect('/dashboard/jobs/add')->with('Success', 'Job Added Successfully');
         } catch (\Error $ex) {
 
             Log::error($ex->getMessage());
-            return redirect('/dashboard/jobs')->with('errors', 'Something went wrong');
+            return redirect('/dashboard/jobs/add')->with('errors', 'Something went wrong');
         }
 
     }
@@ -111,9 +122,10 @@ class JobController extends Controller
      */
     public function show($id)
     {
-        $job = $this->model_instance::find($id);
-        $job->push('user', $job->user);
-        return response()->json(['status' => 'success', 'data' => $job], 200);
+        $job = $this->model_instance::findOrFail($id);
+        //$job->push('user', $job->user);
+
+        return view('admin/jobs/show',compact('job'));
     }
 
     /**
