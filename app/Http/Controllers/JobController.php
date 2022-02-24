@@ -24,7 +24,7 @@ class JobController extends Controller
         $this->error_message = trans('admin.fail_while_create');
         $this->update_error_message = trans('admin.fail_while_update');
         $this->model_instance = Job::class;
-        //  $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     private function StoreValidationRules()
@@ -33,13 +33,18 @@ class JobController extends Controller
             'title' => 'required|string|max:100',
             'type' => 'required|string|max:100',
             'salary' => 'required|integer',
-            'paid_per' => 'required|in:hour,day',
+            'paid_per' => 'required|string|max:100',
             'work_time' => 'required|string|max:100',
-            'location' => 'required|string|max:100',
             'desc' => 'required|string|max:10000',
-            'military_status' => 'required|in:done,not_yet',
-            'experience' => 'required|numeric|max:50',
-            'education' => 'required|string|max:100',
+            'military_status' => 'required|in:done,not_yet,exempt',
+            'experience' => 'required|integer|max:50',
+            'education_level' => 'required|in:bac,master,doc,phd',
+            'currency' => 'required|string|max:100',
+            'city' => 'required|string|max:100',
+            'area' => 'required|string|max:100',
+            'smoker' => 'required|integer',
+            'driver_license' => 'required|integer',
+            'category' => 'required|string|max:100',
             'relationship_status' => 'required|in:married,engaged,single',
         ];
     }
@@ -52,11 +57,16 @@ class JobController extends Controller
             'salary' => 'required|integer',
             'paid_per' => 'required|string|max:100',
             'work_time' => 'required|string|max:100',
-            'location' => 'required|string|max:100',
             'desc' => 'required|string|max:10000',
-            'military_status' => 'required|in:done,not_yet',
+            'military_status' => 'required|in:done,not_yet,exempt',
             'experience' => 'required|integer|max:50',
-            'education' => 'required|string|max:100',
+            'education_level' => 'required|in:bac,master,doc,phd',
+            'currency' => 'required|string|max:100',
+            'city' => 'required|string|max:100',
+            'area' => 'required|string|max:100',
+            'smoker' => 'required|integer',
+            'driver_license' => 'required|integer',
+            'category' => 'required|string|max:100',
             'relationship_status' => 'required|in:married,engaged,single',
         ];
     }
@@ -76,7 +86,7 @@ class JobController extends Controller
     public function create()
     {
         $categories=Category::all();
-        return view('admin/jobs/add')->with('categories');
+        return view('admin/jobs/add',compact('categories'));
     }
 
     /**

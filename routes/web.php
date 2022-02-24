@@ -22,15 +22,19 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::group( [   'middleware' => ['auth'] ], function() {
 
-Route::get('/dashboard',function () {
-    return view('admin/index');
-});
-Route::get('/dashboard/jobs',[App\Http\Controllers\JobController::class, 'index']);
-Route::get('/dashboard/jobs/add',[App\Http\Controllers\JobController::class, 'create']);
-Route::post('/dashboard/jobs',[App\Http\Controllers\JobController::class, 'store']);
-Route::get('/dashboard/jobs/{id}',[App\Http\Controllers\JobController::class, 'show']);
-Route::group(['middleware' => ['role:user']], function () {});
-Route::get('/dashboardssss',function () {
-    return view('admin/index');
+
+    Route::get('/dashboard', function () {
+        return view('admin/index');
+    });
+    Route::get('/dashboard/jobs', [App\Http\Controllers\JobController::class, 'index']);
+    Route::get('/dashboard/jobs/add', [App\Http\Controllers\JobController::class, 'create']);
+    Route::post('/dashboard/jobs', [App\Http\Controllers\JobController::class, 'store']);
+    Route::get('/dashboard/jobs/{id}', [App\Http\Controllers\JobController::class, 'show']);
+    Route::group(['middleware' => ['role:user']], function () {
+    });
+    Route::get('/dashboardssss', function () {
+        return view('admin/index');
+    });
 });

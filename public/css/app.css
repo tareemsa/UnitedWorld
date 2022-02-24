@@ -10021,3 +10021,10 @@ h3 {
 .nav-treeview > .nav-item > .nav-link{
  width: 95%!important;
 }
+#app > div > main > div > section.content > div > div > div > div.card-body > div:nth-child(1) > div:nth-child(1) > img{
+    border-radius: 30%;
+}
+#app > div > main > div > section.content > div > div > div > div.card-body > div{
+text-transform: capitalize!important;
+
+}

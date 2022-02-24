@@ -19,14 +19,18 @@ class CreateJobsTable extends Migration
             $table->string('title');
             $table->longText('desc');
             $table->string('type');
-            $table->string('location');
             $table->string('work_time');
             $table->string('paid_per');
+            $table->string('city');
+            $table->string('area');
             $table->string('military_status');
             $table->string('education_level');
             $table->string('relationship_status');
+            $table->string('currency');
             $table->integer('salary');
             $table->integer('experience');
+            $table->smallInteger('smoker');
+            $table->smallInteger('driver_license');
             $table->timestamps();
         });
     }

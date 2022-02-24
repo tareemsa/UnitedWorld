@@ -26,15 +26,21 @@
 
             <div class="container col-12">
                 @if(session()->has('Success'))
-                    <div class="m-sm-4 alert alert-success">
-                        {{ session()->get('Success') }}
+                 <script>toastr.info('')</script>
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <h5><i class="icon fas fa-check"></i>  {{ session()->get('Success') }}</h5>
                     </div>
                 @endif
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul>
                             @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
+
+                                <div class="alert alert-danger alert-dismissible">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                    <h5><i class="icon fas fa-ban"></i> {{ $error }}!</h5>
+                                </div>
                             @endforeach
                         </ul>
                     </div>
@@ -48,8 +54,6 @@
                     <div class="card card-primary" >
                         <div class="card-header">
                             <h3 class="card-title">Add New Job</h3>
-
-
                         </div>
                         <div class="card-body">
                             <div class="form-group">
@@ -77,9 +81,6 @@
                                     <option value="part_time">Part Time</option>
                                 </select>
                                 </div>
-
-
-
                                 <div class="col-2">
                                 <label for="paid_per">Paid Per</label>
                                 <select required id="paid_per" name="paid_per" class="form-control custom-select">
@@ -95,15 +96,14 @@
                                     <input required type="number" id="salary" name="salary" class="form-control">
                                 </div>
                                 <div class="col-2">
-                                    <label for="military_status">Currency</label>
-                                    <select required id="military_status" name="military_status" class="form-control custom-select">
+                                    <label for="currency">Currency</label>
+                                    <select required id="currency" name="currency" class="form-control custom-select">
                                         <option  disabled>Select one</option>
                                         <option value="done" selected>USD</option>
                                         <option value="exempt" selected>EURO</option>
                                         <option value="not_yet">TL</option>
                                     </select>
                                 </div>
-
                                 <div class="col-2">
                                     <label for="military_status">Military Status</label>
                                     <select required id="military_status" name="military_status" class="form-control custom-select">
@@ -116,107 +116,95 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-3">
-                                    <div class="form-group">
-                                        <label>Minimal</label>
-                                        <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                            <option selected="selected" data-select2-id="3">Alabama</option>
-                                            <option data-select2-id="46">Alaska</option>
-                                            <option data-select2-id="47">California</option>
-                                            <option data-select2-id="48">Delaware</option>
-                                            <option data-select2-id="49">Tennessee</option>
-                                            <option data-select2-id="50">Texas</option>
-                                            <option data-select2-id="51">Washington</option>
-                                        </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-v434-container"><span class="select2-selection__rendered" id="select2-v434-container" role="textbox" aria-readonly="true" title="California">California</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                    </div>
                                 <label for="city">City</label>
-                                    <select name="city" class="form-control custom-select">
-                                        <option value="">Choose...</option>
-                                        <option value="1">Adana</option>
-                                        <option value="2">Adıyaman</option>
-                                        <option value="3">Afyonkarahisar</option>
-                                        <option value="4">Ağrı</option>
-                                        <option value="5">Amasya</option>
-                                        <option value="6">Ankara</option>
-                                        <option value="7">Antalya</option>
-                                        <option value="8">Artvin</option>
-                                        <option value="9">Aydın</option>
-                                        <option value="10">Balıkesir</option>
-                                        <option value="11">Bilecik</option>
-                                        <option value="12">Bingöl</option>
-                                        <option value="13">Bitlis</option>
-                                        <option value="14">Bolu</option>
-                                        <option value="15">Burdur</option>
-                                        <option value="16">Bursa</option>
-                                        <option value="17">Çanakkale</option>
-                                        <option value="18">Çankırı</option>
-                                        <option value="19">Çorum</option>
-                                        <option value="20">Denizli</option>
-                                        <option value="21">Diyarbakır</option>
-                                        <option value="22">Edirne</option>
-                                        <option value="23">Elazığ</option>
-                                        <option value="24">Erzincan</option>
-                                        <option value="25">Erzurum</option>
-                                        <option value="26">Eskişehir</option>
-                                        <option value="27">Gaziantep</option>
-                                        <option value="28">Giresun</option>
-                                        <option value="29">Gümüşhane</option>
-                                        <option value="30">Hakkâri</option>
-                                        <option value="31">Hatay</option>
-                                        <option value="32">Isparta</option>
-                                        <option value="33">Mersin</option>
-                                        <option value="34">İstanbul</option>
-                                        <option value="35">İzmir</option>
-                                        <option value="36">Kars</option>
-                                        <option value="37">Kastamonu</option>
-                                        <option value="38">Kayseri</option>
-                                        <option value="39">Kırklareli</option>
-                                        <option value="40">Kırşehir</option>
-                                        <option value="41">Kocaeli</option>
-                                        <option value="42">Konya</option>
-                                        <option value="43">Kütahya</option>
-                                        <option value="44">Malatya</option>
-                                        <option value="45">Manisa</option>
-                                        <option value="46">Kahramanmaraş</option>
-                                        <option value="47">Mardin</option>
-                                        <option value="48">Muğla</option>
-                                        <option value="49">Muş</option>
-                                        <option value="50">Nevşehir</option>
-                                        <option value="51">Niğde</option>
-                                        <option value="52">Ordu</option>
-                                        <option value="53">Rize</option>
-                                        <option value="54">Sakarya</option>
-                                        <option value="55">Samsun</option>
-                                        <option value="56">Siirt</option>
-                                        <option value="57">Sinop</option>
-                                        <option value="58">Sivas</option>
-                                        <option value="59">Tekirdağ</option>
-                                        <option value="60">Tokat</option>
-                                        <option value="61">Trabzon</option>
-                                        <option value="62">Tunceli</option>
-                                        <option value="63">Şanlıurfa</option>
-                                        <option value="64">Uşak</option>
-                                        <option value="65">Van</option>
-                                        <option value="66">Yozgat</option>
-                                        <option value="67">Zonguldak</option>
-                                        <option value="68">Aksaray</option>
-                                        <option value="69">Bayburt</option>
-                                        <option value="70">Karaman</option>
-                                        <option value="71">Kırıkkale</option>
-                                        <option value="72">Batman</option>
-                                        <option value="73">Şırnak</option>
-                                        <option value="74">Bartın</option>
-                                        <option value="75">Ardahan</option>
-                                        <option value="76">Iğdır</option>
-                                        <option value="77">Yalova</option>
-                                        <option value="78">Karabük</option>
-                                        <option value="79">Kilis</option>
-                                        <option value="80">Osmaniye</option>
-                                        <option value="81">Düzce</option>
+                                    <select name="city" class="form-control custom-select"  required>
+                                        <option value="" disabled >Choose...</option>
+                                        <option value="adana">Adana</option>
+                                        <option value="adıyaman">Adıyaman</option>
+                                        <option value="afyonkarahisar">Afyonkarahisar</option>
+                                        <option value="ağrı">Ağrı</option>
+                                        <option value="amasya">Amasya</option>
+                                        <option value="ankara">Ankara</option>
+                                        <option value="antalya">Antalya</option>
+                                        <option value="artvin">Artvin</option>
+                                        <option value="aydın">Aydın</option>
+                                        <option value="balıkesir">Balıkesir</option>
+                                        <option value="bilecik">Bilecik</option>
+                                        <option value="bingöl">Bingöl</option>
+                                        <option value="bitlis">Bitlis</option>
+                                        <option value="bolu">Bolu</option>
+                                        <option value="burdur">Burdur</option>
+                                        <option value="bursa">Bursa</option>
+                                        <option value="çanakkale">Çanakkale</option>
+                                        <option value="çankırı">Çankırı</option>
+                                        <option value="çorum">Çorum</option>
+                                        <option value="denizli">Denizli</option>
+                                        <option value="diyarbakır">Diyarbakır</option>
+                                        <option value="edirne">Edirne</option>
+                                        <option value="Elazığ">Elazığ</option>
+                                        <option value="erzincan">Erzincan</option>
+                                        <option value="erzurum">Erzurum</option>
+                                        <option value="eskişehir">Eskişehir</option>
+                                        <option value="gaziantep">Gaziantep</option>
+                                        <option value="giresun">Giresun</option>
+                                        <option value="gümüşhane">Gümüşhane</option>
+                                        <option value="hakkâri">Hakkâri</option>
+                                        <option value="hatay">Hatay</option>
+                                        <option value="isparta">Isparta</option>
+                                        <option value="mersin">Mersin</option>
+                                        <option value="istanbul">İstanbul</option>
+                                        <option value="izmir">İzmir</option>
+                                        <option value="kars">Kars</option>
+                                        <option value="kastamonu">Kastamonu</option>
+                                        <option value="kayseri">Kayseri</option>
+                                        <option value="kırklareli">Kırklareli</option>
+                                        <option value="kırşehir">Kırşehir</option>
+                                        <option value="kocaeli">Kocaeli</option>
+                                        <option value="konya">Konya</option>
+                                        <option value="kütahya">Kütahya</option>
+                                        <option value="malatya">Malatya</option>
+                                        <option value="manisa">Manisa</option>
+                                        <option value="kahramanmaraş">Kahramanmaraş</option>
+                                        <option value="mardin">Mardin</option>
+                                        <option value="muğla">Muğla</option>
+                                        <option value="muş">Muş</option>
+                                        <option value="nevşehir">Nevşehir</option>
+                                        <option value="niğde">Niğde</option>
+                                        <option value="ordu">Ordu</option>
+                                        <option value="rize">Rize</option>
+                                        <option value="sakarya">Sakarya</option>
+                                        <option value="samsun">Samsun</option>
+                                        <option value="siirt">Siirt</option>
+                                        <option value="sinop">Sinop</option>
+                                        <option value="sivas">Sivas</option>
+                                        <option value="tekirdağ">Tekirdağ</option>
+                                        <option value="tokat">Tokat</option>
+                                        <option value="trabzon">Trabzon</option>
+                                        <option value="tunceli">Tunceli</option>
+                                        <option value="şanlıurfa">Şanlıurfa</option>
+                                        <option value="Uşak">Uşak</option>
+                                        <option value="Van">Van</option>
+                                        <option value="Yozgat">Yozgat</option>
+                                        <option value="Zonguldak">Zonguldak</option>
+                                        <option value="Aksaray">Aksaray</option>
+                                        <option value="Bayburt">Bayburt</option>
+                                        <option value="Karaman">Karaman</option>
+                                        <option value="Kırıkkale">Kırıkkale</option>
+                                        <option value="Batman">Batman</option>
+                                        <option value="Şırnak">Şırnak</option>
+                                        <option value="Bartın">Bartın</option>
+                                        <option value="Ardahan">Ardahan</option>
+                                        <option value="Iğdır">Iğdır</option>
+                                        <option value="Yalova">Yalova</option>
+                                        <option value="Karabük">Karabük</option>
+                                        <option value="Kilis">Kilis</option>
+                                        <option value="Osmaniye">Osmaniye</option>
+                                        <option value="Düzce">Düzce</option>
                                     </select>
                                 </div>        <div class="col-3">
 
-                                <label for="location">Area</label>
-                                <input required type="text" id="location" name="location" class="form-control">
+                                <label for="area">Area</label>
+                                <input required type="text" id="area" name="area" class="form-control">
                                 </div>
 
                                 <div class="col-3">
@@ -225,8 +213,14 @@
                                 </div>
 
                                 <div class="col-3">
-                                <label for="education">Education level</label>
-                                <input required type="text" id="education" name="education" class="form-control">
+                                <label for="education_level">Education level</label>
+                                    <select required id="education_level" name="education_level" class="form-control custom-select">
+                                        <option  disabled>Select one</option>
+                                        <option value="bac" selected>Bac</option>
+                                        <option value="master">Master</option>
+                                        <option value="doc">Doc</option>
+                                        <option value="phd">Phd</option>
+                                    </select>
                                 </div>
 
                                 <div class="col-3">
@@ -241,20 +235,29 @@
 
                                 <div class="col-3">
                                     <label for="relationship_status">Smoker</label>
-                                    <select required id="relationship_status" name="relationship_status" class="form-control custom-select">
+                                    <select required id="smoker" name="smoker" class="form-control custom-select">
                                         <option  disabled>Select one</option>
-                                        <option value="no" selected>No</option>
-                                        <option value="yes">Yes</option>
+                                        <option value="0" selected>No</option>
+                                        <option value="1">Yes</option>
                                     </select>
                                 </div>
 
                                 <div class="col-3">
                                     <label for="relationship_status">Driver license </label>
-                                    <select required id="relationship_status" name="relationship_status" class="form-control custom-select">
+                                    <select required id="driver_license" name="driver_license" class="form-control custom-select">
                                         <option  disabled>Select one</option>
-                                        <option value="married" selected>Married</option>
-                                        <option value="engaged">Engaged</option>
-                                        <option value="single">Single</option>
+                                        <option value="1" selected>Yes</option>
+                                        <option value="0">No</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="category ">Category </label>
+                                    <select required id="category" name="category" class="form-control custom-select">
+                                        <option  disabled>Select one</option>
+                                      @foreach ($categories as $cat)
+                                        <option value="{{$cat->title}}">{{$cat->title}}</option>
+                                      @endforeach
                                     </select>
                                 </div>
 

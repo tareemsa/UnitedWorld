@@ -41,6 +41,11 @@
     <link rel="stylesheet" href="/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="/plugins/summernote/summernote-bs4.min.css">
+    <!-- toastr -->
+    <link rel="stylesheet" href="/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="/plugins/toastr/toastr.css">
+    <script src="/plugins/toastr/toastr.min.js"></script>
+    <script src="/plugins/toastr/toastr.js.map"></script>
 
 
     <!-- Bootstrap Color Picker -->
@@ -225,7 +230,19 @@
                         <img src="/dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="" class="d-block">Admin Name</a>
+                        <a id="navbarDropdown" style="padding: 0rem 1rem;" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }}
+                        </a>
+
+                        <a class="nav-link" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+
                     </div>
                 </div>
 
@@ -709,8 +726,12 @@
     </div>
 </div>
 <!-- REQUIRED SCRIPTS -->
+
 <!-- jQuery -->
 <script src="/plugins/jquery/jquery.min.js"></script>
+<!-- Toastr -->
+<script src="/plugins/toastr/toastr.min.js"></script>
+<script src="/plugins/toastr/toastr.js.map"></script>
 <!-- Bootstrap -->
 <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- overlayScrollbars -->

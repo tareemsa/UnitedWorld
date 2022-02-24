@@ -42,49 +42,65 @@
                                     <label for="title"> JOB : </label> {{$job->title}}
                                 </div>
                                 <div class="col-3" style="margin-top: 4%;">
-                                    <label for="education_level">Education level : </label>{{$job->education_level}}
+                                    <label for="education_level">Education level : </label> {{$job->education_level}}
 
                                 </div>
                             </div>
+                            <div class="row col-12">
+                                <div class="col-3" style="margin-top: 4%;">
+                                    <label for="title"> Driver license : </label>  @if($job->driver_license==0)no @else yes @endif
 
+                                </div>
+                                <div class="col-3" style="margin-top: 4%;">
+                                    <label for="title"> Category : </label> {{$job->category}}
+                                </div>
+                                <div class="col-3" style="margin-top: 4%;">
+                                    <label for="title"> City : </label> {{$job->city}}
+                                </div>
+                                <div class="col-3" style="margin-top: 4%;">
+                                    <label for="area">Area: </label> {{$job->area}}
+
+                                </div>
+                            </div>
                             <br/>
                             <div class="form-group row col-12">
                                 <div class="col-12">
                                     <label for="summernote"> Description</label>
-                                    <textarea required name="desc" class="form-control"
-                                              rows="5">{{$job->desc}}</textarea>
+                                    <dev required name="desc" class="form-control"
+                                              rows="5">{!! $job->desc !!}
+                                    </dev>
                                 </div>
                             </div>
 
 
                             <div class="form-group row col-12">
                                 <div class="col-3">
-                                    <label for="type">Type : </label>{{$job->type}}
+                                    <label for="type">Type : </label> {{$job->type}}
                                 </div>
                                 <div class="col-3">
-                                    <label for="work_time">Work Time : </label>{{$job->work_time}}
+                                    <label for="work_time">Work Time : </label> {{$job->work_time}}
                                 </div>
                                 <div class="col-3">
-                                    <label for="paid_per">Paid Per : </label>{{$job->paid_per}}
+                                    <label for="paid_per">Paid Per : </label> {{$job->paid_per}}
                                 </div>
                                 <div class="col-3">
-                                    <label for="salary">Salary : </label>{{$job->salary}}
+                                    <label for="salary">Salary : </label> {{$job->salary}}
                                 </div>
                             </div>
 
                             <div class=" form-group row col-12">
                                 <div class="col-3">
-                                    <label for="military_status">Military Status : </label>{{$job->military_status}}
+                                    <label for="military_status">Military Status : </label> {{$job->military_status}}
 
                                 </div>
                                 <div class="col-3">
-                                    <label for="location">Location : </label>{{$job->location}}
+                                    <label for="Smoker">Smoker : </label> @if($job->smoker==0)no @else yes @endif
                                 </div>
                                 <div class="col-3">
-                                    <label for="experience">Experience : </label>{{$job->experience}}
+                                    <label for="experience">Experience : </label> {{$job->experience}}
                                 </div>
                                 <div class="col-3">
-                                    <label for="relationship_status">Relationship status : </label>{{$job->relationship_status}}
+                                    <label for="relationship_status">Relationship status : </label> {{$job->relationship_status}}
                                 </div>
 
                             </div>

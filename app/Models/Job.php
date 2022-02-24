@@ -8,15 +8,27 @@ use Illuminate\Database\Eloquent\Model;
 class Job extends Model
 {
     use HasFactory;
+    public function category(){
+        return $this->belongsTo('App\Models\Category');
+    }
     protected $fillable = [
         'user_id',
         'title',
         'desc',
         'type',
-        'location',
         'work_time',
         'paid_per',
         'salary',
+        'city',
+        'area',
+        'military_status',
+        'education_level',
+        'relationship_status',
+        'currency',
+        'experience',
+        'smoker',
+        'driver_license',
+        'category',
     ];
 
     public function user()
