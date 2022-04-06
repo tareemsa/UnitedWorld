@@ -134,16 +134,30 @@ class JobController extends Controller
     {
         $job = $this->model_instance::findOrFail($id);
         //$job->push('user', $job->user);
-
         return view('admin/jobs/show',compact('job'));
+    }
+
+    /**
+     *Show update page for the specified resource in storage.
+     *
+     * @param  int $id
+     * @return \Illuminate\Http\Response*/
+
+    public function edit( $id)
+    {
+        $job = $this->model_instance::findOrFail($id);
+        //$job->push('user', $job->user);
+        return view('admin/jobs/edit',compact('job'));
+
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function update(Request $request, $id)
     {
@@ -152,17 +166,21 @@ class JobController extends Controller
         if ($validator->fails()) {
             Log::error($validator->errors());
 
-            return response()->json(['status' => 'fail', 'errors' => formatValidationMessages($validator->errors()->getMessages())], 422);
+            return redirect('/dashboard/jobs/add') ->withErrors($validator) ->withInput();
         }
 
-
+        try {
         $validated_data = $validator->validated();
         $validated_data['user_id'] = get_Current_user_id();
         $object = $this->model_instance::find($id);
         $object->update($validated_data);
         $log_message = 'jobs.update_log' . '#' . $object->id;
 
-        return response()->json(['status' => 'success', 'success' => ['Job Updated']], 200);
+        } catch (\Error $ex) {
+
+            Log::error($ex->getMessage());
+            return redirect('/dashboard/jobs/add')->with('errors', 'Something went wrong');
+        }
 
     }
 
