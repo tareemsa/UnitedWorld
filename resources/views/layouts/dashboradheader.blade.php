@@ -44,8 +44,7 @@
     <!-- toastr -->
     <link rel="stylesheet" href="/plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="/plugins/toastr/toastr.css">
-    <script src="/plugins/toastr/toastr.min.js"></script>
-    <script src="/plugins/toastr/toastr.js.map"></script>
+
 
 
     <!-- Bootstrap Color Picker -->
@@ -731,7 +730,6 @@
 <script src="/plugins/jquery/jquery.min.js"></script>
 <!-- Toastr -->
 <script src="/plugins/toastr/toastr.min.js"></script>
-<script src="/plugins/toastr/toastr.js.map"></script>
 <!-- Bootstrap -->
 <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- overlayScrollbars -->

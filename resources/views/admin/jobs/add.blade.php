@@ -26,24 +26,25 @@
 
             <div class="container col-12">
                 @if(session()->has('Success'))
-                 <script>toastr.info('')</script>
-                    <div class="alert alert-success alert-dismissible">
+                 <script>
+                     document.addEventListener("DOMContentLoaded", function() {
+                         toastr.success('{{ session()->get('Success') }}');
+                     })
+                 </script>
+
+<!--                    <div class="alert alert-success alert-dismissible">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
                         <h5><i class="icon fas fa-check"></i>  {{ session()->get('Success') }}</h5>
-                    </div>
+                    </div>-->
                 @endif
                 @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-
-                                <div class="alert alert-danger alert-dismissible">
-                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                    <h5><i class="icon fas fa-ban"></i> {{ $error }}!</h5>
-                                </div>
-                            @endforeach
-                        </ul>
-                    </div>
+                        @foreach ($errors->all() as $error)
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function() {
+                                    toastr.error('{{ $error }}');
+                                })
+                            </script>
+                        @endforeach
                 @endif
 
             </div>
