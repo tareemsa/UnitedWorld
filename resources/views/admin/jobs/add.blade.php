@@ -273,7 +273,7 @@
 
             <div class="row">
                 <div class="col-12">
-                    <a href="" class="btn btn-secondary">Cancel</a>
+                    <button onclick="this.form.reset();" href="" class="btn btn-secondary">Cancel</button>
                     <input type="submit" value="Add New Job" class="btn btn-success float-right">
                 </div>
             </div>

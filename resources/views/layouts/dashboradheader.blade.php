@@ -45,7 +45,10 @@
     <link rel="stylesheet" href="/plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="/plugins/toastr/toastr.css">
 
-
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 
     <!-- Bootstrap Color Picker -->
     <link rel="stylesheet" href="/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
@@ -204,7 +207,7 @@
                         <i class="fas fa-expand-arrows-alt"></i>
                     </a>
                 </li>
-                <li class="nav-item hide">
+                <li class="nav-item ">
                     <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
                         <i class="fas fa-th-large"></i>
                     </a>
@@ -272,29 +275,14 @@
 
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="/dashboard/categories" class="nav-link">
                                 <i class="nav-icon fas  fa-braille"></i>
                                 <p>
                                     Categories
-                                    <i class="fas fa-angle-left right"></i>
                                     <span class="badge badge-info right"></span>
                                 </p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="/dashboard/jobs/" class="nav-link">
-                                        <i class="fas  fa-align-justify nav-icon"></i>
-                                        <p>View All</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/dashboard/jobs/add" class="nav-link">
-                                        <i class="fas fa-plus-square nav-icon"></i>
-                                        <p>Add</p>
-                                    </a>
-                                </li>
 
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -785,6 +773,19 @@
 <script src="/plugins/bs-stepper/js/bs-stepper.min.js"></script>
 <!-- dropzonejs -->
 <script src="/plugins/dropzone/min/dropzone.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="/plugins/jszip/jszip.min.js"></script>
+<script src="/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
 <!-- AdminLTE for demo purposes -->
 <script src="/dist/js/demo.js"></script>

@@ -27,10 +27,12 @@ class CreateJobsTable extends Migration
             $table->string('education_level');
             $table->string('relationship_status');
             $table->string('currency');
+            $table->string('category');
             $table->integer('salary');
             $table->integer('experience');
             $table->smallInteger('smoker');
             $table->smallInteger('driver_license');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -192,9 +192,18 @@ class JobController extends Controller
      */
     public function destroy($id)
     {
-        $job = $this->model_instance::find($id);
-        $job->delete();
-        return response()->json(['status' => 'success', 'Job', $id, "deleted" => $job], 200);
+
+        try {
+            $object = $this->model_instance::find($id);
+            $object->delete();
+            $log_message = 'jobs.create_log' . '#' . $object->id;
+            Log::info($log_message);
+            return redirect('/dashboard/jobs/')->with('info', 'Job #'.$id.' Deleted Successfully');
+        } catch (\Error $ex) {
+
+            Log::error($ex->getMessage());
+            return redirect('/dashboard/jobs/')->with('errors', 'Something went wrong');
+        }
     }
 
     public function search($term)
