@@ -51,7 +51,7 @@ Purchase:
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm full_width">
                     <div class="gc_header_wrapper">
                         <div class="gc_logo">
-                            <a href="index.html"><img src="images/header/logo.png" alt="Logo" title="Job Pro" class="img-responsive"></a>
+                            <a href="index.html"><img src="front/images/header/logo.png" alt="Logo" title="Job Pro" class="img-responsive"></a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@ Purchase:
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6">
                                         <div class="gc_logo">
-                                            <a href="index.html"><img src="images/header/logo.png" alt="Logo" title="Grace Church"></a>
+                                            <a href="index.html"><img src="front/images/header/logo.png" alt="Logo" title="Grace Church"></a>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6">
@@ -423,7 +423,7 @@ Purchase:
                     <div class="item">
                         <div class="jp_tittle_slides_one">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img1.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img1.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -432,7 +432,7 @@ Purchase:
                         </div>
                         <div class="jp_tittle_slides_one jp_tittle_slides_two">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img2.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img2.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -441,7 +441,7 @@ Purchase:
                         </div>
                         <div class="jp_tittle_slides_one jp_tittle_slides_third">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img3.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img3.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -452,7 +452,7 @@ Purchase:
                     <div class="item">
                         <div class="jp_tittle_slides_one">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img2.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img2.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -461,7 +461,7 @@ Purchase:
                         </div>
                         <div class="jp_tittle_slides_one jp_tittle_slides_two">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img3.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img3.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -470,7 +470,7 @@ Purchase:
                         </div>
                         <div class="jp_tittle_slides_one jp_tittle_slides_third">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img1.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img1.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -481,7 +481,7 @@ Purchase:
                     <div class="item">
                         <div class="jp_tittle_slides_one">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img3.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img3.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -490,7 +490,7 @@ Purchase:
                         </div>
                         <div class="jp_tittle_slides_one jp_tittle_slides_two">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img1.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img1.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -499,7 +499,7 @@ Purchase:
                         </div>
                         <div class="jp_tittle_slides_one jp_tittle_slides_third">
                             <div class="jp_tittle_side_img_wrapper">
-                                <img src="images/content/tittle_img2.png" alt="tittle_img" />
+                                <img src="front/images/content/tittle_img2.png" alt="tittle_img" />
                             </div>
                             <div class="jp_tittle_side_cont_wrapper">
                                 <h4>Graphic Designer (UI / UX)</h4>
@@ -529,7 +529,7 @@ Purchase:
                                     <div class="item">
                                         <div class="jp_hiring_content_main_wrapper">
                                             <div class="jp_hiring_content_wrapper">
-                                                <img src="images/content/hiring_img1.png" alt="hiring_img" />
+                                                <img src="front/images/content/hiring_img1.png" alt="hiring_img" />
                                                 <h4>Akshay INC.</h4>
                                                 <p>(NewYork)</p>
                                                 <ul>
@@ -541,7 +541,7 @@ Purchase:
                                     <div class="item">
                                         <div class="jp_hiring_content_main_wrapper">
                                             <div class="jp_hiring_content_wrapper">
-                                                <img src="images/content/hiring_img2.png" alt="hiring_img" />
+                                                <img src="front/images/content/hiring_img2.png" alt="hiring_img" />
                                                 <h4>Akshay INC.</h4>
                                                 <p>(NewYork)</p>
                                                 <ul>
@@ -553,7 +553,7 @@ Purchase:
                                     <div class="item">
                                         <div class="jp_hiring_content_main_wrapper">
                                             <div class="jp_hiring_content_wrapper">
-                                                <img src="images/content/hiring_img3.png" alt="hiring_img" />
+                                                <img src="front/images/content/hiring_img3.png" alt="hiring_img" />
                                                 <h4>Akshay INC.</h4>
                                                 <p>(NewYork)</p>
                                                 <ul>
@@ -565,7 +565,7 @@ Purchase:
                                     <div class="item">
                                         <div class="jp_hiring_content_main_wrapper">
                                             <div class="jp_hiring_content_wrapper">
-                                                <img src="images/content/hiring_img4.png" alt="hiring_img" />
+                                                <img src="front/images/content/hiring_img4.png" alt="hiring_img" />
                                                 <h4>Akshay INC.</h4>
                                                 <p>(NewYork)</p>
                                                 <ul>
@@ -600,7 +600,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -639,7 +639,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -678,7 +678,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -717,7 +717,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -756,7 +756,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -797,7 +797,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -836,7 +836,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -875,7 +875,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -914,7 +914,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -953,7 +953,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -994,7 +994,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1033,7 +1033,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1072,7 +1072,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1111,7 +1111,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1150,7 +1150,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1207,7 +1207,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1246,7 +1246,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1285,7 +1285,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1324,7 +1324,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1363,7 +1363,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1404,7 +1404,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1443,7 +1443,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1482,7 +1482,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1521,7 +1521,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1560,7 +1560,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1601,7 +1601,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1640,7 +1640,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1679,7 +1679,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1718,7 +1718,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1757,7 +1757,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1813,7 +1813,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1852,7 +1852,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1891,7 +1891,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1930,7 +1930,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -1969,7 +1969,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2010,7 +2010,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2049,7 +2049,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2088,7 +2088,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2127,7 +2127,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2166,7 +2166,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2207,7 +2207,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img1.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2246,7 +2246,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img2.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2285,7 +2285,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img3.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2324,7 +2324,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img4.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img4.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2363,7 +2363,7 @@ Purchase:
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img5.jpg" alt="post_img" />
+                                                                <img src="front/images/content/job_post_img5.jpg" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
                                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2416,7 +2416,7 @@ Purchase:
                         <div class="jp_register_section_main_wrapper">
                             <div class="jp_regis_left_side_box_wrapper">
                                 <div class="jp_regis_left_side_box">
-                                    <img src="images/content/regis_icon.png" alt="icon" />
+                                    <img src="front/images/content/regis_icon.png" alt="icon" />
                                     <h4>I’m an EMPLOYER</h4>
                                     <p>Signed in companies are able to post new<br> job offers, searching for candidate...</p>
                                     <ul>
@@ -2427,7 +2427,7 @@ Purchase:
                             <div class="jp_regis_right_side_box_wrapper">
                                 <div class="jp_regis_right_img_overlay"></div>
                                 <div class="jp_regis_right_side_box">
-                                    <img src="images/content/regis_icon2.png" alt="icon" />
+                                    <img src="front/images/content/regis_icon2.png" alt="icon" />
                                     <h4>I’m an candidate</h4>
                                     <p>Signed in companies are able to post new<br> job offers, searching for candidate...</p>
                                     <ul>
@@ -2450,7 +2450,7 @@ Purchase:
                             <div class="jp_add_resume_wrapper">
                                 <div class="jp_add_resume_img_overlay"></div>
                                 <div class="jp_add_resume_cont">
-                                    <img src="images/content/resume_logo.png" alt="logo" />
+                                    <img src="front/images/content/resume_logo.png" alt="logo" />
                                     <h4>Get Best Matched Jobs On your Email. Add Resume NOW!</h4>
                                     <ul>
                                         <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;ADD RESUME</a></li>
@@ -2467,7 +2467,7 @@ Purchase:
                                     <div class="owl-carousel owl-theme">
                                         <div class="item">
                                             <div class="jp_spotlight_slider_img_Wrapper">
-                                                <img src="images/content/spotlight_img.jpg" alt="spotlight_img" />
+                                                <img src="front/images/content/spotlight_img.jpg" alt="spotlight_img" />
                                             </div>
                                             <div class="jp_spotlight_slider_cont_Wrapper">
                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2487,7 +2487,7 @@ Purchase:
                                         </div>
                                         <div class="item">
                                             <div class="jp_spotlight_slider_img_Wrapper">
-                                                <img src="images/content/spotlight_img.jpg" alt="spotlight_img" />
+                                                <img src="front/images/content/spotlight_img.jpg" alt="spotlight_img" />
                                             </div>
                                             <div class="jp_spotlight_slider_cont_Wrapper">
                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2507,7 +2507,7 @@ Purchase:
                                         </div>
                                         <div class="item">
                                             <div class="jp_spotlight_slider_img_Wrapper">
-                                                <img src="images/content/spotlight_img.jpg" alt="spotlight_img" />
+                                                <img src="front/images/content/spotlight_img.jpg" alt="spotlight_img" />
                                             </div>
                                             <div class="jp_spotlight_slider_cont_Wrapper">
                                                 <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
@@ -2557,7 +2557,7 @@ Purchase:
                                 <div class="jp_rightside_career_main_content">
                                     <div class="jp_rightside_career_content_wrapper">
                                         <div class="jp_rightside_career_img">
-                                            <img src="images/content/career_img1.jpg" alt="career_img" />
+                                            <img src="front/images/content/career_img1.jpg" alt="career_img" />
                                         </div>
                                         <div class="jp_rightside_career_img_cont">
                                             <h4>Job Seekeks OCT - 2017</h4>
@@ -2566,7 +2566,7 @@ Purchase:
                                     </div>
                                     <div class="jp_rightside_career_content_wrapper">
                                         <div class="jp_rightside_career_img">
-                                            <img src="images/content/career_img2.jpg" alt="career_img" />
+                                            <img src="front/images/content/career_img2.jpg" alt="career_img" />
                                         </div>
                                         <div class="jp_rightside_career_img_cont">
                                             <h4>Job Seekeks OCT - 2017</h4>
@@ -2575,7 +2575,7 @@ Purchase:
                                     </div>
                                     <div class="jp_rightside_career_content_wrapper">
                                         <div class="jp_rightside_career_img">
-                                            <img src="images/content/career_img3.jpg" alt="career_img" />
+                                            <img src="front/images/content/career_img3.jpg" alt="career_img" />
                                         </div>
                                         <div class="jp_rightside_career_img_cont">
                                             <h4>Job Seekeks OCT - 2017</h4>
@@ -2809,7 +2809,7 @@ Purchase:
                     <div class="jp_rightside_career_main_content">
                         <div class="jp_rightside_career_content_wrapper jp_best_deal_right_content">
                             <div class="jp_rightside_career_img">
-                                <img src="images/content/client_img1.jpg" alt="career_img" />
+                                <img src="front/images/content/client_img1.jpg" alt="career_img" />
                             </div>
                             <div class="jp_rightside_career_img_cont">
                                 <h4>Akshay Handge</h4>
@@ -2818,7 +2818,7 @@ Purchase:
                         </div>
                         <div class="jp_rightside_career_content_wrapper jp_best_deal_right_content">
                             <div class="jp_rightside_career_img">
-                                <img src="images/content/client_img2.jpg" alt="career_img" />
+                                <img src="front/images/content/client_img2.jpg" alt="career_img" />
                             </div>
                             <div class="jp_rightside_career_img_cont">
                                 <h4>Akshay Handge</h4>
@@ -2827,7 +2827,7 @@ Purchase:
                         </div>
                         <div class="jp_rightside_career_content_wrapper jp_best_deal_right_content">
                             <div class="jp_rightside_career_img">
-                                <img src="images/content/client_img3.jpg" alt="career_img" />
+                                <img src="front/images/content/client_img3.jpg" alt="career_img" />
                             </div>
                             <div class="jp_rightside_career_img_cont">
                                 <h4>Jacklen Fandores</h4>
@@ -2859,7 +2859,7 @@ Purchase:
                             <div class="item">
                                 <div class="jp_client_slide_show_wrapper">
                                     <div class="jp_client_slider_img_wrapper">
-                                        <img src="images/content/client_slider_img.jpg" alt="client_img" />
+                                        <img src="front/images/content/client_slider_img.jpg" alt="client_img" />
                                     </div>
                                     <div class="jp_client_slider_cont_wrapper">
                                         <p>“Sollicitudin, lorem quis bibendum en auctor, aks consequat ipsum, nec a sagittis sem nibh id elit. Duis sed odo nibh vulputate Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin”</p>
@@ -2870,7 +2870,7 @@ Purchase:
                             <div class="item">
                                 <div class="jp_client_slide_show_wrapper">
                                     <div class="jp_client_slider_img_wrapper">
-                                        <img src="images/content/client_slider_img.jpg" alt="client_img" />
+                                        <img src="front/images/content/client_slider_img.jpg" alt="client_img" />
                                     </div>
                                     <div class="jp_client_slider_cont_wrapper">
                                         <p>“Sollicitudin, lorem quis bibendum en auctor, aks consequat ipsum, nec a sagittis sem nibh id elit. Duis sed odo nibh vulputate Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin”</p>
@@ -2881,7 +2881,7 @@ Purchase:
                             <div class="item">
                                 <div class="jp_client_slide_show_wrapper">
                                     <div class="jp_client_slider_img_wrapper">
-                                        <img src="images/content/client_slider_img.jpg" alt="client_img" />
+                                        <img src="front/images/content/client_slider_img.jpg" alt="client_img" />
                                     </div>
                                     <div class="jp_client_slider_cont_wrapper">
                                         <p>“Sollicitudin, lorem quis bibendum en auctor, aks consequat ipsum, nec a sagittis sem nibh id elit. Duis sed odo nibh vulputate Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin”</p>
@@ -3011,7 +3011,7 @@ Purchase:
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
                 <div class="jp_down_mob_img_wrapper">
-                    <img src="images/content/mobail.png" alt="mobail_img" />
+                    <img src="front/images/content/mobail.png" alt="mobail_img" />
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -3024,7 +3024,7 @@ Purchase:
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 visible-sm visible-xs">
                 <div class="jp_down_mob_img_wrapper">
-                    <img src="images/content/mobail.png" class="img-responsive" alt="mobail_img" />
+                    <img src="front/images/content/mobail.png" class="img-responsive" alt="mobail_img" />
                 </div>
             </div>
         </div>
@@ -3039,7 +3039,7 @@ Purchase:
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="jp_newsletter_text">
-                        <img src="images/content/news_logo.png" class="img-responsive" alt="news_logo" />
+                        <img src="front/images/content/news_logo.png" class="img-responsive" alt="news_logo" />
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -3058,7 +3058,7 @@ Purchase:
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="jp_footer_logo_wrapper">
                         <div class="jp_footer_logo">
-                            <a href="#"><img src="images/content/resume_logo.png" alt="footer_logo"/></a>
+                            <a href="#"><img src="front/images/content/resume_logo.png" alt="footer_logo"/></a>
                         </div>
                     </div>
                 </div>
