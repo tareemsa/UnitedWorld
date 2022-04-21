@@ -21,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/registeruser', [App\Http\Controllers\UserController::class, 'CreateUser'])->name('registeruser');
+Route::post('/registeruser', [App\Http\Controllers\UserController::class, 'StoreUser'])->name('storeruser');
 
 //dashboard
 Route::group( [   'middleware' => ['auth'] ], function() {

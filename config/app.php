@@ -133,7 +133,19 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
-
+    /*
+    |--------------------------------------------------------------------------
+    | Available locales
+    |--------------------------------------------------------------------------
+    |
+    | List all locales that your application works with
+    |
+    */
+    'available_locales' => [
+        'English' => 'en',
+        'Russian' => 'tr',
+        'French' => 'fr',
+    ],
     'providers' => [
 
         /*

@@ -22,11 +22,11 @@ class CreateUsersTable extends Migration
             $table->string('country');
             $table->string('resume');
             $table->string('image');
-            $table->integer('max_hour_rate');
-            $table->integer('min_hour_rate');
-            $table->integer('points');
+            $table->integer('max_hour_rate')->nullable();
+            $table->integer('min_hour_rate')->nullable();
+            $table->integer('points')->default(0);
             $table->integer('category_id')->unsigned();
-            $table->text('short_desc');
+            $table->text('short_desc')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
