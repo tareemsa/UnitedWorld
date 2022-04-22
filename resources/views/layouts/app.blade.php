@@ -561,7 +561,7 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="jp_footer_logo_wrapper">
                                         <div class="jp_footer_logo">
-                                            <a href="#"><img src="front/images/content/resume_logo.png" alt="footer_logo"/></a>
+                                            <a href="#"><img src="front/images/header/logo.png" alt="footer_logo"/></a>
                                         </div>
                                     </div>
                                 </div>
@@ -585,8 +585,6 @@
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Add a Resume</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> candidate Dashboard</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Past Applications</a></li>
-                                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Job Alerts</a></li>
-                                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Bookmarks</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> My Account</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Your Jobs</a></li>
                                                 </ul>
@@ -601,8 +599,6 @@
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Browse candidates</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Employer Dashboard</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Add Job</a></li>
-                                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Job Page</a></li>
-                                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Job Packages</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Work Process</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> My Account</a></li>
                                                 </ul>
@@ -618,8 +614,6 @@
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Terms & Conditions</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Privacy Policy</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Careers with Us</a></li>
-                                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Sitemap</a></li>
-                                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a></li>
                                                     <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> FAQs</a></li>
                                                 </ul>
                                             </div>
@@ -642,10 +636,7 @@
                                                     <ul>
                                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
                                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                                        <li class="hidden-xs"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                        <li class="hidden-xs"><a href="#"><i class="fa fa-vimeo"></i></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
