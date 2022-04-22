@@ -20,8 +20,10 @@
     <link rel="stylesheet" type="text/css" href="front/css/flaticon.css" />
     <link rel="stylesheet" type="text/css" href="front/css/style.css" />
     <link rel="stylesheet" type="text/css" href="front/css/responsive.css" />
+
+
     <!-- favicon links -->
-    <link rel="shortcut icon" type="image/png" href="front/images/header/favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="front/images/header/logo.png" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -33,7 +35,278 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<style>
+    /* login_section start */
 
+    .login_section{
+        width:100%;
+        float:left;
+    }
+    .login_form_wrapper{
+        float:left;
+        width: 100%;
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    .login_form_wrapper h1{
+        font-size:30px;
+        text-align:center;
+        font-weight:600;
+        text-transform:uppercase;
+        margin-bottom:30px;
+    }
+    .login_wrapper{
+        float:left;
+        width: 100%;
+        background:#f7f7f7;
+        padding:50px;
+        margin-bottom:20px;
+    }
+    .login_wrapper a.btn {
+        color: #fff;
+        width: 100%;
+        height: 50px;
+        padding: 6px 25px;
+        line-height: 36px;
+        margin-bottom:20px;
+        text-align:left;
+        border-radius:8px;
+        background: #23c0e9;
+        font-size: 16px;
+        border: 1px solid #23c0e9;
+    }
+    .login_wrapper a.btn:hover {
+        background-color: #00b5e4;
+        border-color: #00b5e4;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .login_wrapper button.btn {
+        color: #fff;
+        width: 100%;
+        height: 50px;
+        padding: 6px 25px;
+        line-height: 36px;
+        margin-bottom:20px;
+        text-align:left;
+        border-radius:8px;
+        background: #23c0e9;
+        font-size: 16px;
+        border: 1px solid #23c0e9;
+    }
+    .login_wrapper button.btn:hover {
+        background-color: #00b5e4;
+        border-color: #00b5e4;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .login_wrapper a span{
+        float:left;
+    }
+    .login_wrapper a i {
+        float: right;
+        margin: 0;
+        line-height: 35px;
+    }
+    .login_wrapper a.google-plus{
+        background: #db4c3e;
+        border: 1px solid #db4c3e;
+    }
+    .login_wrapper a.google-plus:hover{
+        background: #bd4033;
+        border-color:#bd4033;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .login_wrapper h2 {
+        font-size: 18px;
+        font-weight:500;
+        margin-bottom:20px;
+        color:#111;
+        line-height: 20px;
+        text-transform: uppercase;
+        text-align:center;
+        position: relative;
+    }
+    .login_wrapper h2::before, .login_wrapper h2::after {
+        content: "";
+        background: #e4e4e4;
+        width: 100px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+    }
+    .login_wrapper h2::before {
+        right: 60%;
+    }
+    .login_wrapper h2::after {
+        left: 60%;
+    }
+    .login_wrapper .form-control {
+        height: 53px;
+        padding: 15px 20px;
+        font-size: 14px;
+        line-height: 24px;
+        border: 1px solid #f1f1f1;
+        border-radius: 8px;
+        box-shadow: none;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        background-color: #fff;
+    }
+    .login_wrapper textarea.form-control{
+        height:auto;
+        resize:none;
+    }
+    .login_wrapper input::placeholder, .login_wrapper textarea::placeholder {
+        color: #999;
+    }
+    .login_wrapper .form-control:focus {
+        color: #999;
+        background-color: fafafa;
+        border: 1px solid #23c0e9 !important;
+    }
+    .login_wrapper  .formsix-pos,.formsix-e{
+        position: relative;
+    }
+    .login_wrapper .form-group.i-password:after, .form-group.i-email:after{
+        position: absolute;
+        top: 13px;
+        font-size: 16px;
+        font-family: "FontAwesome";
+        color: #c0c0c0;
+    }
+    .form-group .field-icon{
+        float: right;
+        left: -15px;
+        margin-top: -50px;
+        position: relative;
+        z-index: 2;
+    }
+    .login_wrapper .form-group.i-email:after{
+        content: "\f0e0";
+        right: 25px;
+    }
+    .login_wrapper .form-group.i-password:after{
+        content: "\f09c";
+        right: 25px;
+    }
+    .login_remember_box{
+        margin-top:30px;
+        margin-bottom:30px;
+        color:#999;
+    }
+    .login_remember_box .control {
+        position: relative;
+        padding-left:20px;
+        cursor: pointer;
+        font-size: 14px;
+        line-height:14px;
+        font-weight: 500;
+        margin:0;
+    }
+    .login_remember_box .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    .login_remember_box .control__indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 13px;
+        height: 13px;
+        background: #fff;
+        border: 1px solid #999;
+    }
+    .login_remember_box .control__indicator:after {
+        content: '';
+        position: absolute;
+        display: none;
+    }
+    .login_remember_box .control input:checked ~ .control__indicator:after {
+        display: block;
+    }
+    .login_remember_box .control--checkbox .control__indicator:after {
+        left: 4px;
+        top: 0;
+        width: 5px;
+        height: 10px;
+        border: solid #111;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+    .login_remember_box .forget_password{
+        float:right;
+        color:#db4c3e;
+        font-size:14px;
+        text-decoration:underline;
+    }
+    .login_btn_wrapper{
+        padding-bottom:20px;
+        margin-bottom:30px;
+        border-bottom:1px solid #e4e4e4;
+    }
+    .login_btn_wrapper a.login_btn {
+        text-align:center;
+        text-transform:uppercase;
+    }
+    .login_btn_wrapper a.login_btn:hover {
+        background-color: #00b5e4;
+        border-color: #00b5e4;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .login_btn_wrapper button.login_btn {
+        text-align:center;
+        text-transform:uppercase;
+        width: 100%;
+    }
+    .login_btn_wrapper button:focus{
+        box-shadow: none;
+        border: none;
+        border-color: transparent;
+    }
+    .login_btn_wrapper button.login_btn:hover{
+        background-color: #00b5e4;
+        border-color: #00b5e4;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .login_message p{
+        text-align:center;
+        font-size:16px !important;
+        margin:0;
+    }
+    .login_message a{
+        color:#23c0e9;
+    }
+    .login_form_wrapper p{
+        width:70%;
+        text-align:center;
+        margin:0px auto;
+        font-size:14px;
+    }
+
+    /* login_section end */
+</style>
 </head>
 <body>
     <div id="app">
@@ -74,52 +347,16 @@
                                             </ul>
                                         </div>
                                         <ul class="float_left">
-                                            <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Home&nbsp;<i class="fa fa-angle-down"></i></a>
+                                            <li class="gc_main_navigation"><a href="/" class="gc_main_navigation">  {{ __('Home') }}&nbsp;</a>
                                                 <!-- mega menu start -->
-                                                <ul>
-                                                    <li class="parent"><a href="index.html">Home1</a></li>
-                                                    <li class="parent"><a href="index_II.html">Home2</a></li>
-                                                    <li class="parent"><a href="index_map.html">Home3</a></li>
-                                                    <li class="parent"><a href="index_iv.html">Home4</a></li>
-                                                    <li class="parent"><a href="index_v.html">Home5</a></li>
-                                                    <li class="parent"><a href="index_vi.html">Home6</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Job&nbsp;<i class="fa fa-angle-down"></i></a>
-                                                <!-- mega menu start -->
-                                                <ul>
-                                                    <li class="parent"><a href="listing_left.html">Listing-Left</a></li>
-                                                    <li class="parent"><a href="listing_right.html">Listing-Right</a></li>
-                                                    <li class="parent"><a href="listing_single.html">Listing-Single</a></li>
 
-                                                </ul>
                                             </li>
-                                            <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">candidates &nbsp;<i class="fa fa-angle-down"></i></a>
-                                                <!-- sub menu start -->
-                                                <ul>
-
-                                                    <li class="parent"><a href="company_listing.html">Company-Listing</a></li>
-                                                    <li class="parent"><a href="company_listing_single.html">Company-Single</a></li>
-                                                    <li class="parent"><a href="candidate_listing.html">candidate-Listing</a></li>
-                                                    <li class="parent"><a href="candidate_profile.html">candidate-Profile</a></li>
-
-
-                                                </ul>
-                                                <!-- sub menu end -->
+                                            <li class="gc_main_navigation"><a href="/jobs" class="gc_main_navigation">  Jobs </a>
                                             </li>
-                                            <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Pages&nbsp;<i class="fa fa-angle-down"></i></a>
-                                                <!-- mega menu start -->
-                                                <ul>
-                                                    <li class="parent"><a href="about.html">About-Us</a></li>
-                                                    <li class="parent"><a href="404_error.html">404</a></li>
-                                                    <li class="parent"><a href="add_postin.html">Add-Posting</a></li>
-                                                    <li class="parent"><a href="login.html">Login</a></li>
-                                                    <li class="parent"><a href="register.html">Register</a></li>
-                                                    <li class="parent"><a href="pricing.html">Pricing</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Blog&nbsp;</a></li>
-                                            <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact</a></li>
+                                            <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">Company &nbsp;</a></li>
+                                            <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">Candidate </a></li>
+                                            <li class=" gc_main_navigation"><a href="#" class="gc_main_navigation">  About Us&nbsp;</a></li>
+                                            <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact us</a></li>
                                         </ul>
                                     </div>
                                     <!-- mainmenu end -->
@@ -146,23 +383,9 @@
                                                                         <input type="search" placeholder="Search...">
                                                                     </form>
                                                                 </li>
-                                                                <li class="has-children">
-                                                                    <a href="#">Home</a>
-
-                                                                    <ul class="cd-secondary-dropdown is-hidden">
-                                                                        <li class="go-back"><a href="#0">Menu</a></li>
-                                                                        <li><a href="index.html">Home1</a></li>
-                                                                        <li><a href="index_II.html">Home2</a></li>
-                                                                        <li><a href="index_map.html">Home3</a></li>
-                                                                        <li><a href="index_iv.html">Home4</a></li>
-                                                                        <li><a href="index_v.html">Home5</a></li>
-                                                                        <li><a href="index_vi.html">Home6</a></li>
-                                                                        <!-- .has-children -->
-
-                                                                    </ul>
-                                                                    <!-- .cd-secondary-dropdown -->
+                                                                <li class="">
+                                                                    <a href="/">Home</a>
                                                                 </li>
-                                                                <!-- .has-children -->
 
 
                                                                 <li class="has-children">
@@ -209,11 +432,7 @@
                                                                     <ul class="cd-secondary-dropdown is-hidden">
                                                                         <li class="go-back"><a href="#0">Menu</a></li>
                                                                         <li><a href="about.html">About-Us</a></li>
-                                                                        <li><a href="404_error.html">404</a></li>
                                                                         <li><a href="add_postin.html">Add-Posting</a></li>
-                                                                        <li><a href="login.html">Login</a></li>
-                                                                        <li><a href="register.html">Register</a></li>
-                                                                        <li><a href="pricing.html">Pricing</a></li>
                                                                         <!-- .has-children -->
 
                                                                     </ul>
