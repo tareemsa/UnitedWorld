@@ -347,16 +347,16 @@
                                             </ul>
                                         </div>
                                         <ul class="float_left">
-                                            <li class="gc_main_navigation"><a href="/" class="gc_main_navigation">  {{ __('Home') }}&nbsp;</a>
+                                            <li class="gc_main_navigation"><a href="/" class="gc_main_navigation">  {{ __('app.home') }}&nbsp;</a>
                                                 <!-- mega menu start -->
 
                                             </li>
-                                            <li class="gc_main_navigation"><a href="/jobs" class="gc_main_navigation">  Jobs </a>
+                                            <li class="gc_main_navigation"><a href="/jobs" class="gc_main_navigation"> {{ __('app.jobs') }}  </a>
                                             </li>
-                                            <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">Company &nbsp;</a></li>
-                                            <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">Candidate </a></li>
-                                            <li class="gc_main_navigation"><a href="#" class="gc_main_navigation">  About Us&nbsp;</a></li>
-                                            <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact us</a></li>
+                                            <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation"> {{ __('app.company') }}  &nbsp;</a></li>
+                                            <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">{{ __('app.candidate') }} </a></li>
+                                            <li class="gc_main_navigation"><a href="#" class="gc_main_navigation">  {{ __('app.about_us') }}</a></li>
+                                            <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">{{ __('app.contact_us')}}</a></li>
 
                                             <li class="has-mega gc_main_navigation">
                                                 <a class="gc_main_navigation" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -517,10 +517,10 @@
 
                                     <ul>
                                         @if (Route::has('register'))
-                                        <li><a href="{{ route('register') }}"><i class="fa fa-user"></i>&nbsp; {{ __('Register') }}</a></li>
+                                        <li><a href="{{ route('register') }}"><i class="fa fa-user"></i>&nbsp; {{ __('app.register') }}</a></li>
                                         @endif
                                         @if (Route::has('login'))
-                                        <li><a href="{{ route('login') }}"><i class="fa fa-sign-in"></i>&nbsp; {{ __('Login') }}</a></li>
+                                        <li><a href="{{ route('login') }}"><i class="fa fa-sign-in"></i>&nbsp; {{ __('app.login') }}</a></li>
                                         @endif
                                     </ul>
                                     @else
@@ -529,7 +529,7 @@
                                             <li> <a  href="{{ route('logout') }}"
                                                      onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                                    {{ __('Logout') }}
+                                                    {{ __('app.logout') }}
                                                 </a></li>
                                         </ul>
 

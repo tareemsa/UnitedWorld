@@ -9,8 +9,8 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="jp_job_heading_wrapper">
                         <div class="jp_job_heading">
-                            <h1><span>3,000+</span> Browse Jobs</h1>
-                            <p>Find Jobs, Employment & Career Opportunities</p>
+                            <h1><span>3,000+</span> {{ __('app.heading') }}</h1>
+                            <p>{{ __('app.sub_heading') }}</p>
                         </div>
                     </div>
                 </div>
