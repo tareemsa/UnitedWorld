@@ -23,7 +23,7 @@
 
 
     <!-- favicon links -->
-    <link rel="shortcut icon" type="image/png" href="front/images/header/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="front/images/header/favicon.png" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
