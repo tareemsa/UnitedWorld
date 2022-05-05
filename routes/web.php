@@ -24,6 +24,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/registeruser', [App\Http\Controllers\UserController::class, 'CreateUser'])->name('registeruser');
 Route::post('/registeruser', [App\Http\Controllers\UserController::class, 'StoreUser'])->name('storeruser');
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
 
 //dashboard
 Route::group( [   'middleware' => ['auth'] ], function() {

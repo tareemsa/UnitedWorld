@@ -355,8 +355,22 @@
                                             </li>
                                             <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">Company &nbsp;</a></li>
                                             <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">Candidate </a></li>
-                                            <li class=" gc_main_navigation"><a href="#" class="gc_main_navigation">  About Us&nbsp;</a></li>
+                                            <li class="gc_main_navigation"><a href="#" class="gc_main_navigation">  About Us&nbsp;</a></li>
                                             <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact us</a></li>
+
+                                            <li class="has-mega gc_main_navigation">
+                                                <a class="gc_main_navigation" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    {{ Config::get('languages')[App::getLocale()] }} <i class="fa fa-angle-down"></i>
+                                                </a>
+                                                <ul  aria-labelledby="navbarDropdownMenuLink">
+                                                    @foreach (Config::get('languages') as $lang => $language)
+                                                        @if ($lang != App::getLocale())
+                                                            <li class="parent">  <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> {{$language}}</a></li>
+                                                        @endif
+                                                    @endforeach
+                                                </ul>
+                                            </li>
+
                                         </ul>
                                     </div>
                                     <!-- mainmenu end -->
@@ -553,6 +567,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- jp Newsletter Wrapper End -->
                     <!-- jp footer Wrapper Start -->
                     <div class="jp_footer_main_wrapper">
