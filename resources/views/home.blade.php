@@ -16,10 +16,10 @@
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="jp_header_form_wrapper">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                             <input type="text" placeholder="Keyword e.g. (Job Title, Description, Tags)">
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                             <div class="jp_form_location_wrapper">
                                 <i class="fa fa-dot-circle-o first_icon"></i><select>
                                     <option>Select Location</option>
@@ -30,17 +30,7 @@
                                 </select><i class="fa fa-angle-down second_icon"></i>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                            <div class="jp_form_exper_wrapper">
-                                <i class="fa fa-dot-circle-o first_icon"></i><select>
-                                    <option>Experience</option>
-                                    <option>Experience</option>
-                                    <option>Experience</option>
-                                    <option>Experience</option>
-                                    <option>Experience</option>
-                                </select><i class="fa fa-angle-down second_icon"></i>
-                            </div>
-                        </div>
+
                         <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                             <div class="jp_form_btn_wrapper">
                                 <ul>
@@ -2127,7 +2117,7 @@
                                     <h4>I’m an EMPLOYER</h4>
                                     <p>Signed in companies are able to post new<br> job offers, searching for candidate...</p>
                                     <ul>
-                                        <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;REGISTER AS COMPANY</a></li>
+                                        <li><a href="/registeruser"><i class="fa fa-plus-circle"></i> &nbsp;REGISTER AS COMPANY</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -2138,7 +2128,7 @@
                                     <h4>I’m an candidate</h4>
                                     <p>Signed in companies are able to post new<br> job offers, searching for candidate...</p>
                                     <ul>
-                                        <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;REGISTER AS COMPANY</a></li>
+                                        <li><a href="/registeruser#company"><i class="fa fa-plus-circle"></i> &nbsp;REGISTER AS COMPANY</a></li>
                                     </ul>
                                 </div>
                                 <div class="jp_regis_center_tag_wrapper">
@@ -2552,7 +2542,7 @@
 </div>
 <!-- jp Best deals Wrapper End -->
 <!-- jp Client Wrapper Start -->
-<div class="jp_client_slider_main_wrapper">
+<div class="jp_client_slider_main_wrapper hidden">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -2574,28 +2564,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="jp_client_slide_show_wrapper">
-                                    <div class="jp_client_slider_img_wrapper">
-                                        <img src="front/images/content/client_slider_img.jpg" alt="client_img" />
-                                    </div>
-                                    <div class="jp_client_slider_cont_wrapper">
-                                        <p>“Sollicitudin, lorem quis bibendum en auctor, aks consequat ipsum, nec a sagittis sem nibh id elit. Duis sed odo nibh vulputate Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin”</p>
-                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i><span>~ Jeniffer Doe &nbsp;<b>(Ui Designer)</b></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="jp_client_slide_show_wrapper">
-                                    <div class="jp_client_slider_img_wrapper">
-                                        <img src="front/images/content/client_slider_img.jpg" alt="client_img" />
-                                    </div>
-                                    <div class="jp_client_slider_cont_wrapper">
-                                        <p>“Sollicitudin, lorem quis bibendum en auctor, aks consequat ipsum, nec a sagittis sem nibh id elit. Duis sed odo nibh vulputate Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin”</p>
-                                        <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i><span>~ Jeniffer Doe &nbsp;<b>(Ui Designer)</b></span>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>

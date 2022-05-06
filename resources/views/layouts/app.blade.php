@@ -10,20 +10,20 @@
     <meta name="author" content="" />
     <meta name="MobileOptimized" content="320" />
     <!--srart theme style -->
-    <link rel="stylesheet" type="text/css" href="front/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/owl.theme.default.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/flaticon.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="front/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/owl.theme.default.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/front/css/responsive.css" />
 
 
     <!-- favicon links -->
-    <link rel="shortcut icon" type="image/png" href="front/images/header/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/front/images/header/favicon.png" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -36,6 +36,195 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 <style>
+    /* register_section start */
+
+    .register_section{
+        float:left;
+        width:100%;
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+    .register_form_wrapper{
+        float:left;
+        width:100%;
+    }
+    .register-tabs.nav-justified>.active>a,
+    .register-tabs.nav-justified>.active>a:focus,
+    .register-tabs.nav-justified>.active>a:hover {
+        border-bottom-color: #f1f1f1;
+        background-color: #fff;
+        color: #4285f4;
+    }
+    .register_tab_wrapper .register-tabs {
+        font-size: 10px;
+        border-bottom: none;
+        padding-top:0;
+        padding-bottom:0;
+        text-transform: uppercase;
+    }
+    .register_tab_wrapper .register-tabs>li.active {
+        position: relative;
+    }
+    .register_tab_wrapper .register-tabs>li.active::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        margin-left: -10px;
+        border-top: 5px solid #23c0e9;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+    .register_tab_wrapper .register-tabs>li>a {
+        line-height: 20px;
+        padding: 15px 30px;
+        border: 0;
+        border-radius: 0px;
+        background-color: #f3f3f3;
+        color: #6d6d6d;
+        font-size:20px;
+        text-transform:capitalize;
+        transition: inherit;
+        width:300px;
+    }
+    .register_tab_wrapper .register-tabs>li>a>span {
+        font-size:14px;
+        text-transform:capitalize;
+        font-weight:400 !important;
+    }
+    .custom_input p{
+        font-size:14px;
+    }
+    .custom_input input{
+        margin: 20px 0;
+    }
+    .register_tab_wrapper .register-tabs>li.active>a,
+    .register_tab_wrapper .register-tabs>li.active>a:focus,
+    .register_tab_wrapper .register-tabs>li.active>a:hover {
+        color: #fff;
+        background-color: #23c0e9;
+        border: 0;
+    }
+    .register_tab_wrapper .tab-content{
+        background-color: #f9f9f9;
+        padding: 30px;
+        float:left;
+        border:1px solid #e4e4e4;
+        margin-bottom:30px;
+        width:100%;
+    }
+    .register_tab_wrapper .nav > li{
+        float:left;
+    }
+    .register_left_form{
+        float:left;
+        width:100%;
+    }
+    .register_left_form .column {
+        padding-right: 30px;
+    }
+    .register_left_form .form-group {
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    .register_left_form .field-label i {
+        float: right;
+        font-size: 16px;
+        color: #666;
+    }
+
+    .register_left_form .form-group .text {
+        position: relative;
+        color: #bbbbbb;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .register_left_form input[type="text"],
+    .register_left_form input[type="email"],
+    .register_left_form input[type="password"],
+    .register_left_form input[type="tel"],
+    .register_left_form input[type="number"],
+    .register_left_form input[type="url"],
+    .register_left_form select,
+    .register_left_form textarea {
+        position: relative;
+        display: block;
+        width: 100%;
+        background: #ffffff;
+        text-transform:capitalize;
+        font-size: 15px;
+        line-height: 26px;
+        color: #888888;
+        padding: 12px 15px;
+        border-radius:7px;
+        height: 50px;
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        transition: all 300ms ease;
+        -webkit-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+    }
+
+    .register_left_form textarea {
+        resize: none;
+        height: 60px !important;
+        padding-left: 30px;
+    }
+    .register_left_form .img-upload img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .register_left_form input:focus,
+    .register_left_form select:focus,
+    .register_left_form textarea:focus {
+        border-color: #23c0e9;
+    }
+    .jp_regiter_top_heading p{
+        font-size:16px;
+        text-transform:capitalize;
+        margin-bottom:20px;
+        margin-top:10px;
+    }
+    .check-box{
+        margin-top:35px;
+    }
+    .checkout-page .check-box {
+        line-height: 24px;
+        font-size: 14px;
+        font-weight: normal;
+        padding-top: 5px;
+    }
+    .check_box_anchr{
+        color:#23c0e9 !important;;
+    }
+    .checkout-page .check-box label {
+        position: relative;
+        top: -1px;
+        font-weight: normal;
+        padding: 0px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #333333;
+    }
+    .register_left_form input[type="checkbox"] + label:before{
+        display:none;
+    }
+    .register_btn_wrapper{
+        padding-top:15px;
+    }
+    .btm_txt_register_form{
+        width: 70%;
+        text-align: center;
+        margin: 0px auto;
+        font-size: 14px;
+    }
+    /* register_section end */
+
     /* login_section start */
 
     .login_section{
@@ -325,7 +514,7 @@
                             <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm full_width">
                                 <div class="gc_header_wrapper">
                                     <div class="gc_logo">
-                                        <a href="index.html"><img src="front/images/header/logo.png" alt="Logo" title="Job Pro" class="img-responsive"></a>
+                                        <a href="/"><img src="/front/images/header/logo.png" alt="Logo" title="Job Pro" class="img-responsive"></a>
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +569,7 @@
                                             <div class="row">
                                                 <div class="col-xs-6 col-sm-6">
                                                     <div class="gc_logo">
-                                                        <a href="index.html"><img src="front/images/header/logo.png" alt="Logo" title="Grace Church"></a>
+                                                        <a href="/"><img src="/front/images/header/logo.png" alt="Logo" title="Grace Church"></a>
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-6 col-sm-6">
@@ -556,7 +745,7 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                     <div class="jp_newsletter_text">
-                                        <img src="front/images/content/news_logo.png" class="img-responsive" alt="news_logo" />
+                                        <img src="/front/images/content/news_logo.png" class="img-responsive" alt="news_logo" />
                                     </div>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -576,7 +765,7 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="jp_footer_logo_wrapper">
                                         <div class="jp_footer_logo">
-                                            <a href="#"><img src="front/images/header/logo.png" alt="footer_logo"/></a>
+                                            <a href="/"><img src="/front/images/header/logo.png" alt="footer_logo"/></a>
                                         </div>
                                     </div>
                                 </div>
@@ -665,5 +854,14 @@
                 <!-- jp footer Wrapper End -->
         </main>
     </div>
+    <script src="/front/js/jquery_min.js"></script>
+    <script src="/front/js/bootstrap.js"></script>
+    <script src="/front/js/jquery.menu-aim.js"></script>
+    <script src="/front/js/jquery.countTo.js"></script>
+    <script src="/front/js/jquery.inview.min.js"></script>
+
+    <script src="/front/js/modernizr.js"></script>
+    <script src="/front/js/jquery.magnific-popup.js"></script>
+    <script src="/front/js/custom_II.js"></script>
 </body>
 </html>

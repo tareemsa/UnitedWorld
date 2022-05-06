@@ -112,4 +112,45 @@ class UserController extends Controller
         }
 
     }
+    public function StoreCompany(Request $request)
+    {
+        //return $request;
+        //handel iamge upload
+        $FileNameToStore = "";
+        if ($request->hasFile('image')) {
+            //get filename with ext
+            $filenamewithext = $request->file('image')->getClientOriginalName();
+            // dd($filenamewithext);
+            //get just the name
+            $filename = pathinfo($filenamewithext, PATHINFO_FILENAME);
+            $extension = $request->file('image')->getClientOriginalExtension();
+            $FileNameToStore = time().$filename .'.'. $extension;
+            $path = $request->file('image')->storeAs('public/images', $FileNameToStore);
+
+        } else {
+            $FileNameToStore = 'noimage.jpg';
+        }
+        $validator = Validator::make($request->all(), $this->StoreValidationRules());
+        if ($validator->fails()) {
+            Log::error($validator->errors());
+
+            return redirect('/registeruser') ->withErrors($validator) ->withInput();
+        }
+
+        try {
+
+            $validated_data = $validator->validated();
+            $validated_data['image'] =$FileNameToStore;
+            $object = $this->model_instance::create($validated_data);
+            $log_message = 'user.register_log' . '#' . $object->id;
+            $this->guard()->login($object);
+            Log::info($log_message);
+            return redirect('/registeruser')->with('Success', 'Registered Successfully')->withInput();
+        } catch (\Error $ex) {
+
+            Log::error($ex->getMessage());
+            return redirect('/registeruser')->with('errors', 'Something went wrong')->withInput();;
+        }
+
+    }
 }

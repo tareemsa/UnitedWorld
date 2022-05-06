@@ -7369,6 +7369,7 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -7388,8 +7389,9 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -10001,30 +10003,4 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
-}
-.hide{
-  display: none!important;
-}
-.nav-sidebar .nav-treeview{
-  padding-left: 10%!important;
-}
-.red{
-  color: red;
-}
-.green{
-  color: lightgreen;
-}
-.yellow{
-  color: #dca331;
-}
-
-.nav-treeview > .nav-item > .nav-link{
- width: 95%!important;
-}
-#app > div > main > div > section.content > div > div > div > div.card-body > div:nth-child(1) > div:nth-child(1) > img{
-    border-radius: 30%;
-}
-#app > div > main > div > section.content > div > div > div > div.card-body > div{
-text-transform: capitalize!important;
-
 }
