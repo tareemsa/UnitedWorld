@@ -13,25 +13,16 @@ class CreateJobsTable extends Migration
      */
     public function up()
     {
-        Schema::create('jobs', function (Blueprint $table) {
+        Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unsigned();
+            $table->integer('project_id')->unsigned();
             $table->string('title');
-            $table->longText('desc');
-            $table->string('type');
-            $table->string('work_time');
-            $table->string('paid_per');
             $table->string('city');
-            $table->string('area');
-            $table->string('military_status');
-            $table->string('education_level');
-            $table->string('relationship_status');
-            $table->string('currency');
-            $table->string('category');
-            $table->integer('salary');
-            $table->integer('experience');
-            $table->smallInteger('smoker');
-            $table->smallInteger('driver_license');
+            $table->string('town');
+            $table->string('phone');
+            $table->string('status');
+            $table->string('uwestate_url');
+            $table->bigInteger('starting_price_usd');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -44,6 +35,6 @@ class CreateJobsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jobs');
+        Schema::dropIfExists('projects');
     }
 }

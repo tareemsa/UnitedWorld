@@ -12,8 +12,8 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
     use HasRoles;
-    public function jobs(){
-        return $this->hasMany('App\Models\Job');
+    public function projects(){
+        return $this->hasMany('App\Models\Project');
     }
 
     /**
@@ -22,16 +22,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
+        'full_name',
         'email',
-        'phone',
-        'address',
-        'country',
-        'resume',
-        'image',
-        'points',
-        'category_id',
-        'short_desc',
         'password',
     ];
 

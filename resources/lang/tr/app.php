@@ -2,7 +2,7 @@
 
 return [
     'home' => 'Ev',
-    'jobs' => 'İşler',
+    'projects' => 'İşler',
     'company' => 'Şirket',
     'candidate' => 'Aday',
     'about_us' => 'Hakkımızda',

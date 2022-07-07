@@ -1,14 +1,14 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
-Project:	Job Pro
+Project:	Project Pro
 Version:	1.0.0
 Author:     Webstrot
-Website: 
-Purchase: 
+Website:
+Purchase:
 -------------------------------------------------------------------
 [Table of contents]
- 
+
 1. Body
 2. Custom css / a
 3. Preloader/ #preloader
@@ -92,7 +92,7 @@ ul{
 	margin:0;
 	padding:0;
 }
-/*-- Header Css Start --*/	
+/*-- Header Css Start --*/
 .jp_map_indx_wrapper{
 	float:left;
 	width:100%;
@@ -271,7 +271,7 @@ ul{
 	padding-top: 30px;
 	border-bottom: 1px solid #ffffff21;
 	position:relative;
-}		
+}
 .menu-bar {
     cursor: pointer;
     position: relative;
@@ -734,10 +734,10 @@ ul{
     height: 60px;
     border: 1px solid #e1e1e1;
     border-right: 0px;
-  -webkit-border-top-left-radius: 50px; 
-  -moz-border-bottom-left-radius: 50px; 
-   border-top-left-radius: 50px; 
-   border-bottom-left-radius: 50px; 
+  -webkit-border-top-left-radius: 50px;
+  -moz-border-bottom-left-radius: 50px;
+   border-top-left-radius: 50px;
+   border-bottom-left-radius: 50px;
 }
 .gc_search_box button{
     width: 60px;
@@ -754,9 +754,9 @@ ul{
 	-ms-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
-	-webkit-border-top-right-radius: 50px; 
-  -moz-border-bottom-right-radius: 50px; 
-   border-top-right-radius: 50px; 
+	-webkit-border-top-right-radius: 50px;
+  -moz-border-bottom-right-radius: 50px;
+   border-top-right-radius: 50px;
    border-bottom-right-radius: 50px;
 }
 .gc_search_box button:hover{
@@ -1028,7 +1028,7 @@ ul{
 	-ms-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
-	
+
 }
 .jp_banner_main_jobs li a:hover{
 	color:#23c0e9;
@@ -1054,13 +1054,13 @@ ul{
 	padding-bottom:30px;
 	border-right:1px solid #ffffff21;
 	 -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
+    -webkit-transform: scale(1);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
+    -ms-transform: scale(1);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
-    transform: scale(1);   
+    transform: scale(1);
 }
 .jp_job_cate_left_border{
 	border-left:1px solid #ffffff21;
@@ -1072,7 +1072,7 @@ ul{
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.5);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.1);   
+    -ms-transform: scale(1.1);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.1);
     transition: all 200ms ease-in;
@@ -1478,7 +1478,7 @@ ul{
 	text-align:center;
 }
 .video_nav_img ul{
-	display:inline-block;  
+	display:inline-block;
 	position: relative;
     top: 15px;
     z-index: 1000;
@@ -1634,7 +1634,7 @@ ul{
 }
 .jp_job_post_right_btn_wrapper li:first-child{
 	margin-left:0;
-} 
+}
 .jp_job_post_right_btn_wrapper li:first-child a{
 	float:left;
 	width:30px;
@@ -1652,7 +1652,7 @@ ul{
     -ms-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
-} 
+}
 .jp_job_post_right_btn_wrapper li:first-child a:hover{
 	background:#f36969;
 	color:#ffffff;
@@ -1745,7 +1745,7 @@ ul{
 	-ms-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
-	
+
 }
 .jp_job_post_main_wrapper_cont{
 	float:left;
@@ -1851,9 +1851,9 @@ ul{
 	color:#ffffff;
 	font-weight:bold;
 	background:#23c0e9;
-	-webkit-border-radius: 10px; 
-  -moz-border-radius: 10px; 
-   border-radius: 10px; 
+	-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+   border-radius: 10px;
    -webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -1937,9 +1937,9 @@ ul{
 	color:#ffffff;
 	font-weight:bold;
 	background:#f36969;
-	-webkit-border-radius: 10px; 
-  -moz-border-radius: 10px; 
-   border-radius: 10px; 
+	-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+   border-radius: 10px;
    -webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -1962,18 +1962,18 @@ ul{
     left: -34px;
     top: 50%;
     margin-top: -20px;
-	-webkit-border-radius: 20px; 
-   -moz-border-radius: 20px; 
-    border-radius: 20px; 
-	-ms-transform: rotate(45deg); 
-    -webkit-transform: rotate(45deg); 
+	-webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+    border-radius: 20px;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 .jp_regis_center_tag_wrapper p{
 	color:#ffffff;
 	font-weight:bold;
-	-ms-transform: rotate(-45deg); 
-    -webkit-transform: rotate(-45deg); 
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 	margin-top: 23px;
 }
@@ -2047,9 +2047,9 @@ ul{
 	color:#ffffff;
 	font-weight:bold;
 	background:#23c0e9;
-	-webkit-border-radius: 10px; 
-  -moz-border-radius: 10px; 
-   border-radius: 10px; 
+	-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+   border-radius: 10px;
    -webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -2076,12 +2076,12 @@ ul{
 	padding-top:15px;
 	padding-bottom:15px;
 	padding-left:20px;
-	-webkit-border-top-left-radius: 10px; 
-  -moz-border-top-left-radius: 10px; 
-   border-top-left-radius: 10px; 
-   -webkit-border-top-right-radius: 10px; 
-  -moz-border-top-right-radius: 10px; 
-   border-top-right-radius: 10px; 
+	-webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+   border-top-left-radius: 10px;
+   -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+   border-top-right-radius: 10px;
 }
 .spotlight_header_wrapper h4{
 	font-size:16px;
@@ -2111,7 +2111,7 @@ ul{
 	-ms-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
-} 
+}
 .jp_spotlight_slider_wrapper  .owl-theme .owl-dots{
 	display:none;
 }
@@ -2210,9 +2210,9 @@ ul{
 	color:#ffffff;
 	font-weight:bold;
 	background:#f36969;
-	-webkit-border-radius: 10px; 
-  -moz-border-radius: 10px; 
-   border-radius: 10px; 
+	-webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+   border-radius: 10px;
    -webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -2239,12 +2239,12 @@ ul{
 	padding-top:15px;
 	padding-bottom:15px;
 	padding-left:20px;
-	-webkit-border-top-left-radius: 10px; 
-  -moz-border-top-left-radius: 10px; 
-   border-top-left-radius: 10px; 
-   -webkit-border-top-right-radius: 10px; 
-  -moz-border-top-right-radius: 10px; 
-   border-top-right-radius: 10px; 
+	-webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+   border-top-left-radius: 10px;
+   -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+   border-top-right-radius: 10px;
 }
 .jp_rightside_job_categories_heading h4{
 	font-size:16px;
@@ -2325,12 +2325,12 @@ ul{
 	padding-top:15px;
 	padding-bottom:15px;
 	padding-left:20px;
-	-webkit-border-top-left-radius: 10px; 
-  -moz-border-top-left-radius: 10px; 
-   border-top-left-radius: 10px; 
-   -webkit-border-top-right-radius: 10px; 
-  -moz-border-top-right-radius: 10px; 
-   border-top-right-radius: 10px; 
+	-webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+   border-top-left-radius: 10px;
+   -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+   border-top-right-radius: 10px;
 }
 .jp_rightside_career_heading h4{
 	font-size:16px;
@@ -2777,9 +2777,9 @@ ul{
 	width:120px;
 }
 .jp_client_slider_img_wrapper img{
-	-webkit-border-radius: 30px; 
-  -moz-border-radius: 30px; 
-   border-radius: 30px; 
+	-webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+   border-radius: 30px;
 }
 .jp_client_slider_cont_wrapper{
 	float:left;
@@ -3053,7 +3053,7 @@ ul{
 .pricing_btn1, .pricing_btn2, .pricing_btn3{
 	display:inline-block;
 	padding-bottom:50px;
-	
+
 }
 .pricing_btn1 ul, .pricing_btn2 ul, .pricing_btn3 ul{
 	padding:0;
@@ -3629,7 +3629,7 @@ ul{
 	-webkit-border-radius:15px;
 	-moz-border-radius:15px;
 	border-radius:15px;
-	background:transparent; 
+	background:transparent;
 	text-align:center;
 	line-height:50px;
 	color:#ffffff8c;
@@ -3640,7 +3640,7 @@ ul{
 	transition: all 0.5s;
 }
 .jp_bottom_footer_right_cont li a:hover{
-	background:#23c0e9; 
+	background:#23c0e9;
 	color:#ffffff;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
@@ -3693,7 +3693,7 @@ ul{
 }
 #return-to-top:hover{
 	background:#23c0e9;
-	border:1px solid transparent;	
+	border:1px solid transparent;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
