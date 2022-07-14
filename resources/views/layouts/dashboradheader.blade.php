@@ -72,7 +72,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__wobble" src="/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            <img class="animation__wobble" src="/front/images/logo.png" alt="AdminLTELogo" height="80" width="160">
         </div>
 
 
@@ -82,7 +82,11 @@
                                     Widgets
                                     inks -->
 
-
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
 
@@ -101,7 +105,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="/" class="brand-link text-center">
-                <img src="/front/images/logo.png" alt="Logo" class="brand-image" style="opacity: 1">
+                <img src="/front/images/logo.png" alt="Logo" class="brand-image" style="opacity: 1;margin-left: 0;">
                 <span class="brand-text font-weight-light"></span>
             </a>
 

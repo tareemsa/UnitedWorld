@@ -61,16 +61,16 @@
                                 <table class="table  table-bordered table-hover dataTable dtr-inline " id="example1">
                                     <thead>
                                     <tr>
-                                        <th style="width: 10px">#</th>
+                                        <th >#</th>
+                                        <th >Project id</th>
                                         <th>Title</th>
-                                        <th>City</th>
                                         <th>Status</th>
                                         <th>Town</th>
-                                        <th>Location</th>
+
                                         <th>Url</th>
-                                        <th>Starting price in usd</th>
-                                        <th>Added By</th>
-                                        <th style="width: 20%">
+                                        <th>Price $</th>
+
+                                        <th style="width: 5%">
                                         </th>
 
                                     </tr>
@@ -78,22 +78,22 @@
                                     <tbody>
                                     @foreach($projects as $project)
                                         <tr>
+                                            <td>{{$project->id}}</td>
                                             <td>{{$project->project_id}}</td>
                                             <td>{{$project->title}}</td>
-                                            <td>{{$project->city}}</td>
                                             <td>{{$project->status}}</td>
                                             <td>{{$project->town}}</td>
-                                            <td>{{$project->location}}</td>
+
                                             <td>{{$project->uwestate_url}}</td>
-                                            <td>{{$project->starting_price_usd	}}</td>
-                                            <td>{{$project->user->name}}</td>
+                                            <td>{{$project->starting_price_usd}} $</td>
+
                                             <td class="project-actions text-right">
-                                                <a class="btn btn-primary btn-sm" href="/dashboard/projects/{{$project->id}}">
+                                                <a class="btn btn-primary btn-sm " style="display:none;" href="/dashboard/projects/{{$project->id}}">
                                                     <i class="fas fa-eye">
                                                     </i>
                                                     View
                                                 </a>
-                                                <a class="btn btn-info btn-sm" href="#">
+                                                <a class="btn btn-info btn-sm hide" style="display:none;" href="#">
                                                     <i class="fas fa-pencil-alt">
                                                     </i>
                                                     Edit

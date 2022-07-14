@@ -104,7 +104,7 @@
 
                                 <div class="col-3">
                                     <label for="Phone">Phone</label>
-                                    <input required type="text" id="Phone" name="Phone" class="form-control">
+                                    <input required type="text" id="phone" name="phone" class="form-control">
 
                                 </div>        <div class="col-3">
 

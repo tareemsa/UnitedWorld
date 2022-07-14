@@ -40,18 +40,12 @@
 
                                     <span class="control__indicator"></span>
                                 </label>
-                                @if (Route::has('password.request'))
-                                <a href="{{ route('password.request') }}" class="forget_password">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                                @endif
+
                             </div>
                             <div class="login_btn_wrapper">
                                 <button type="submit" class="btn btn-primary login_btn">  {{ __('Login') }} </button>
                             </div>
-                            <div class="login_message">
-                                <p>Don’t have an account ? <a href="#"> Register Now </a> </p>
-                            </div>
+
                             </form>
                         </div>
 
