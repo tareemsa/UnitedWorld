@@ -65,7 +65,7 @@
                                         <th >Project id</th>
                                         <th>Title</th>
                                         <th>Status</th>
-                                        <th>Town</th>
+                                        <th>Location</th>
 
                                         <th>Url</th>
                                         <th>Price $</th>
@@ -84,7 +84,7 @@
                                             <td>{{$project->status}}</td>
                                             <td>{{$project->town}}</td>
 
-                                            <td>{{$project->uwestate_url}}</td>
+                                            <td><a href="{{$project->uwestate_url}}">{{$project->uwestate_url}}</a></td>
                                             <td>{{$project->starting_price_usd}} $</td>
 
                                             <td class="project-actions text-right">
