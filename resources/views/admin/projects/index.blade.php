@@ -85,7 +85,7 @@
                                             <td>{{$project->town}}</td>
 
                                             <td><a href="{{$project->uwestate_url}}">{{$project->uwestate_url}}</a></td>
-                                            <td>{{$project->starting_price_usd}} $</td>
+                                            <td>{{number_format($project->starting_price_usd)}} $</td>
 
                                             <td class="project-actions text-right">
                                                 <a class="btn btn-primary btn-sm " style="display:none;" href="/dashboard/projects/{{$project->id}}">
