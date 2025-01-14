@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateJobsTable extends Migration
+class CreateProjectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,10 +15,13 @@ class CreateJobsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->integer('project_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->string('title');
+            $table->string('rooms');
+            $table->boolean('sea_view');
             $table->string('city');
             $table->string('town');
+            $table->string('location');
             $table->string('phone');
             $table->string('status');
             $table->string('uwestate_url');

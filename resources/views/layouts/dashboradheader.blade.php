@@ -176,6 +176,48 @@
 
                             </ul>
                         </li>
+                                <!-- Orders menu (added) -->
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-box"></i>
+                <p>
+                    Orders
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="/dashboard/orders" class="nav-link">
+                        <i class="fas fa-list nav-icon"></i>
+                        <p>View All Orders</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/dashboard/orders/add" class="nav-link">
+                        <i class="fas fa-plus nav-icon"></i>
+                        <p>Add New Order</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Match Sidebar -->
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-futbol"></i>
+                <p>
+                    Matches
+                    <i class="fas fa-angle-left right"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="/matches" class="nav-link">
+                        <i class="fas fa-list nav-icon"></i>
+                        <p>View All Matches</p>
+                    </a>
+                </li>
+
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-users"></i>

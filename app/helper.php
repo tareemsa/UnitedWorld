@@ -39,7 +39,8 @@ function is_employee()
     }
     return true;
 }
+*/
 function get_Current_user_id()
 {
     return Auth::user()->id;
-}*/
+}

@@ -1,17 +1,18 @@
 @extends('layouts.dashboradheader')
 
 @section('content')
-    @if(session()->has('success'))
+@if(session()->has('success'))
+
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 toastr.success('{{ session()->get('success') }}');
-            });
+            })
         </script>
     @elseif(session()->has('info'))
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 toastr.info('{{ session()->get('info') }}');
-            });
+            })
         </script>
     @endif
 
@@ -20,7 +21,7 @@
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     toastr.error('{{ $error }}');
-                });
+                })
             </script>
         @endforeach
     @endif
@@ -32,11 +33,11 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Projects</h1>
+                        <h1>Orders</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item active">Projects</li>
+                            <li class="breadcrumb-item active">Orders</li>
                         </ol>
                     </div>
                 </div>
@@ -50,7 +51,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">All Projects</h3>
+                                <h3 class="card-title">All Orders</h3>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
@@ -72,29 +73,29 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($projects as $project)
+                                        @foreach($orders as $order)
                                             <tr>
-                                                <td>{{ $project->id }}</td>
-                                                <td>{{ $project->title }}</td>
-                                                <td>{{ $project->status }}</td>
-                                                <td>{{ $project->city }}</td>
-                                                <td>{{ $project->town }}</td>
-                                                <td>{{ $project->location }}</td>
-                                                <td>{{ $project->rooms }}</td>
-                                                <td>{{ $project->sea_view }}</td>
-                                                <td><a href="{{ $project->uwestate_url }}">{{ $project->uwestate_url }}</a></td>
-                                                <td>{{ number_format($project->starting_price_usd) }} $</td>
-                                                <td>{{ $project->user->full_name }}</td>
+                                                <td>{{ $order->id }}</td>
+                                                <td>{{ $order->title }}</td>
+                                                <td>{{ $order->status }}</td>
+                                                <td>{{ $order->city }}</td>
+                                                <td>{{ $order->town }}</td>
+                                                <td>{{ $order->location }}</td>
+                                                <td>{{ $order->rooms }}</td>
+                                                <td>{{ $order->sea_view }}</td>
+                                                <td><a href="{{ $order->uwestate_url }}">{{ $order->uwestate_url }}</a></td>
+                                                <td>{{ number_format($order->starting_price_usd) }} $</td>
+                                                <td>{{ $order->user->full_name }}</td>
 
                                                 <td class="project-actions text-right">
-                                                    <a class="btn btn-info btn-sm" href="/dashboard/projects/{{ $project->id }}/edit">
-                                                        <i class="fas fa-pencil-alt"></i>
+                                                    <a class="btn btn-info btn-sm" href="/dashboard/orders/{{ $order->id }}/edit">
+                                                        <i class="fas fa-pencil-alt"></i> 
                                                     </a>
-                                                    <form method="post" action="/dashboard/projects/{{ $project->id }}" style="display:inline;">
+                                                    <form method="post" action="/dashboard/orders/{{ $order->id }}" style="display:inline;">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this project?')">
-                                                            <i class="fas fa-trash"></i>
+                                                        <button class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this order?')">
+                                                            <i class="fas fa-trash"></i> 
                                                         </button>
                                                     </form>
                                                 </td>
@@ -108,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            {{ $projects->links() }}
+            {{ $orders->links() }}
         </section>
         <!-- /.content -->
     </div>

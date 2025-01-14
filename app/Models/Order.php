@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Project extends Model
+
+class Order extends Model
 {
-    use SoftDeletes;
     use HasFactory;
+    use SoftDeletes; 
 
     protected $fillable = [
-
         'user_id',
         'title',
         'city',
@@ -25,6 +25,8 @@ class Project extends Model
         'rooms',
         'sea_view',
     ];
+
+    protected $dates = ['deleted_at']; // Ensure 'deleted_at' is treated as a date
 
     public function user()
     {

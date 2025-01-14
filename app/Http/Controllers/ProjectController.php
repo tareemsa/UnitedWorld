@@ -30,10 +30,13 @@ class ProjectController extends Controller
     private function StoreValidationRules()
     {
         return [
-            'project_id' => 'required|string|max:100',
+
             'title' => 'required|string|max:100',
             'phone' => 'required|string|max:100',
+            'city' => 'required|string|max:100',
             'town' => 'required|string|max:100',
+            'rooms' => 'required|string|max:100',
+            'sea_view' => 'required|integer',
             'location' => 'required|string|max:100',
             'status' => 'required|in:sold,ready,under_construction',
             'uwestate_url' => 'required|string|max:100',
@@ -44,14 +47,13 @@ class ProjectController extends Controller
     private function UpdateValidationRules()
     {
         return [
-            'project_id' => 'required|string|max:100',
             'title' => 'required|string|max:100',
             'phone' => 'required|string|max:100',
             'town' => 'required|string|max:100',
             'location' => 'required|string|max:100',
             'status' => 'required|in:sold,ready,under_construction',
             'uwestate_url' => 'required|string|max:100',
-            'starting_price_usd	' => 'required|integer',
+            'starting_price_usd' => 'required|integer', // Corrected key
         ];
     }
 
@@ -93,8 +95,8 @@ class ProjectController extends Controller
         try {
 
             $validated_data = $validator->validated();
-            //$validated_data['user_id'] = get_Current_user_id();
-            $validated_data['user_id'] = 1;
+            $validated_data['user_id'] = get_Current_user_id();
+            //$validated_data['user_id'] = A;
             $object = $this->model_instance::create($validated_data);
 
             $log_message = 'projects.create_log' . '#' . $object->id;
@@ -126,15 +128,56 @@ class ProjectController extends Controller
      *
      * @param  int $id
      * @return \Illuminate\Http\Response*/
+    public function edit($id)
+    {
+        try {
 
-    public function edit( $id)
+                $project = Project::findOrFail($id);
+                return view('admin.projects.edit', compact('project'));
+            
+            
+        } catch (\Exception $ex) {
+            Log::error($ex->getMessage());
+            return redirect('/dashboard/projects')->with('errors', 'project not found');
+        }
+    }
+    public function update(Request $request, $id)
+    {
+        $validator = Validator::make($request->all(), $this->UpdateValidationRules());
+    
+        if ($validator->fails()) {
+            Log::error($validator->errors());
+            return redirect()->route('projects.edit', $id)
+                ->withErrors($validator)
+                ->withInput();
+        }
+    
+        try {
+            $validated_data = array_filter($validator->validated(), function ($value) {
+                return $value !== null;
+            });
+            $project = project::findOrFail($id); // Fetch the order or throw 404
+            $project->update($validated_data);
+    
+            Log::info('project updated: ' . $project->id);
+    
+            return redirect()->route('projects.index')->with('success', 'project Updated Successfully');
+        } catch (\Exception $ex) {
+            Log::error($ex->getMessage());
+            return redirect()->route('projects.edit', $id)->with('error', 'Something went wrong');
+        }
+    }
+
+
+
+   /* public function edit( $id)
     {
         $job = $this->model_instance::findOrFail($id);
         //$job->push('user', $job->user);
         return view('admin/projects/edit',compact('job'));
 
     }
-
+*/
     /**
      * Update the specified resource in storage.
      *
@@ -143,7 +186,7 @@ class ProjectController extends Controller
      * @return \Illuminate\Http\Response
      * @throws \Illuminate\Validation\ValidationException
      */
-    public function update(Request $request, $id)
+   /* public function update(Request $request, $id)
     {
         // has_access('job_update');
         $validator = Validator::make($request->all(), $this->UpdateValidationRules());
@@ -166,7 +209,7 @@ class ProjectController extends Controller
             return redirect('/dashboard/projects/add')->with('errors', 'Something went wrong');
         }
 
-    }
+    }*/
 
     /**
      * Remove the specified resource from storage.
