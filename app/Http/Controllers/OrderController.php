@@ -49,7 +49,7 @@ class OrderController extends Controller
             'location' => 'required|string|max:100',
             'status' => 'required|in:sold,ready,under_construction',
             'uwestate_url' => 'required|string|max:100',
-            'starting_price_usd' => 'required|integer', // Corrected key
+            'starting_price_usd' => 'required|integer', 
         ];
     }
     
