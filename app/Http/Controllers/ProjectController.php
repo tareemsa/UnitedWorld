@@ -53,7 +53,7 @@ class ProjectController extends Controller
             'location' => 'required|string|max:100',
             'status' => 'required|in:sold,ready,under_construction',
             'uwestate_url' => 'required|string|max:100',
-            'starting_price_usd' => 'required|integer', // Corrected key
+            'starting_price_usd' => 'required|integer', 
         ];
     }
 
@@ -84,7 +84,6 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
 
-        //has_access('job_create');
         $validator = Validator::make($request->all(), $this->StoreValidationRules());
         if ($validator->fails()) {
             Log::error($validator->errors());
@@ -96,7 +95,7 @@ class ProjectController extends Controller
 
             $validated_data = $validator->validated();
             $validated_data['user_id'] = get_Current_user_id();
-            //$validated_data['user_id'] = A;
+
             $object = $this->model_instance::create($validated_data);
 
             $log_message = 'projects.create_log' . '#' . $object->id;
@@ -186,30 +185,7 @@ class ProjectController extends Controller
      * @return \Illuminate\Http\Response
      * @throws \Illuminate\Validation\ValidationException
      */
-   /* public function update(Request $request, $id)
-    {
-        // has_access('job_update');
-        $validator = Validator::make($request->all(), $this->UpdateValidationRules());
-        if ($validator->fails()) {
-            Log::error($validator->errors());
 
-            return redirect('/dashboard/projects/add') ->withErrors($validator) ->withInput();
-        }
-
-        try {
-        $validated_data = $validator->validated();
-        $validated_data['user_id'] = get_Current_user_id();
-        $object = $this->model_instance::find($id);
-        $object->update($validated_data);
-        $log_message = 'projects.update_log' . '#' . $object->id;
-
-        } catch (\Error $ex) {
-
-            Log::error($ex->getMessage());
-            return redirect('/dashboard/projects/add')->with('errors', 'Something went wrong');
-        }
-
-    }*/
 
     /**
      * Remove the specified resource from storage.
