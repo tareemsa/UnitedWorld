@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class MatchController extends Controller
 {
-    // عرض الصفحة الأولى (بحث بدون نتائج)
+
     public function index()
     {
         return view('admin.match.index');
@@ -24,7 +24,7 @@ class MatchController extends Controller
         $orders = Order::all();
         $projects = Project::all();
     
-        // استخدم مجموعات لمنع التكرار
+
         $matchedOrders = collect();
         $matchedProjects = collect();
     
@@ -67,14 +67,14 @@ class MatchController extends Controller
                 }
     
                 if ($isMatched) {
-                    // أضف البيانات الفريدة فقط
+
                     $matchedOrders->push($order);
                     $matchedProjects->push($project);
                 }
             }
         }
     
-        // إزالة التكرار من القوائم
+
         $matchedOrders = $matchedOrders->unique('id');
         $matchedProjects = $matchedProjects->unique('id');
     
